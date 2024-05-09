@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clarissa's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Clarissa</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Clarissa</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Clarissa profile picture" />
+      </div>
+      <div class="section-text">
+        <p class="hello">Hello, I'm</p>
+        <h1 class="name">Clarissa</h1>
+        <p class="short-desc">Computer Science student <br> at University of Bristol</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+            <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="linkedin-icon"
+            onclick="window.open('https://www.linkedin.com/in/clarissa-chng/', '_blank')"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="github-icon"
+            onclick="window.open('https://github.com/clarissachng', '_blank')"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="gtk">get to know more</p>
+      <h1 class="about-me">ABOUT ME</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="experience">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Software Engineering Spring Intern @ Amazon, Bloomberg & J.P Morgan 
+                <br>Incoming Software Engineering Summer Intern @ J.P Morgan</p>
+              </p>
+            </div>
+            <div class="education">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>BSc Computer Science @ Univeristy of Bristol
+                <br/>Foundation in Science and Engineering @ KICL</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am a Computer Science student at the University of Bristol 
+              and I have a passion for using tech for a greater cause 
+              and I am always eager to learn new technologies. 
+              Some people say I'm a <b>fast learner</b>, some say I'm <b>creative</b>, 
+              and I would like to classify myself as an <b>adventurer</b>! 
+              <br><br> Outside of coding, I love arts & crafts, photography and some strategy games! I also enjoy cooking and going on a foodie's adventure!
+              <br> Fun fact: I love talking about personality types and could bring some heated discussions about it
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="explore">explore my</p>
+      <h1 class="experience-text">SKILLS</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">PROGRAMMING LANGUAGES</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/coding-icon/c.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/coding-icon/haskell.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Haskell</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/coding-icon/java.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/coding-icon/python.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/coding-icon/html.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/coding-icon/css.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">TOOLS</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/experience-icon/vscode.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>VS Code</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/experience-icon/intellij.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>IntelliJ IDEA</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/experience-icon/google.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>G-Suite</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/experience-icon/canva.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Canva</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/experience-icon/office365.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Office 365</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/experience-icon/git.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">LANGUAGES</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/experience-icon/languages.png"
+                  alt="Languages icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>English</h3>
+                  <p>Native/ Bilingual</p>
+                </div>
+              </article>
+              <article>
+                <img
+                src="./assets/experience-icon/languages.png"
+                  alt="Languages icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Chinese/ Mandarin</h3>
+                  <p>Native/ Bilingual</p>
+                </div>
+              </article>
+              <article>
+                <img
+                src="./assets/experience-icon/languages.png"
+                  alt="Languages icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Bahasa Malaysia</h3>
+                  <p>Professional</p>
+                </div>
+              </article>
+              <article>
+                <img
+                src="./assets/experience-icon/languages.png"
+                  alt="Languages icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>French</h3>
+                  <p>Basic Classroom</p>
+                </div>
+              </article>
+              <article>
+                <img
+                src="./assets/experience-icon/languages.png"
+                  alt="Languages icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Cantonese</h3>
+                  <p>Basic Classroom</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:clarissachnggg@gmail.com">clarissachnggg@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Clarissa. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
