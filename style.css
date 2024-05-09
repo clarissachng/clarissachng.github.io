@@ -3,11 +3,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 @font-face {
   font-family: "HamIsCute";
-  src: url(HamIsCute-Regular.ttf);
+  src: url(./assets/fonts/HamIsCute-Regular.ttf);
 }
 @font-face {
   font-family: "Shaabyla";
-  src: url(Shaabyla-Regular.ttf);
+  src: url(./assets/fonts/Shaabyla-Regular.ttf);
 }
 
 * {
@@ -404,6 +404,7 @@ article .icon {
 
 /* PROJECTS SECTION */
 
+
 #projects {
   position: relative;
 }
@@ -428,8 +429,7 @@ article .icon {
   color: black;
   border-color: rgb(163, 163, 163);
 }
-
-/* CONTACT */
+.color-contain
 
 #contact {
   display: flex;
