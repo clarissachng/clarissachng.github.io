@@ -1,9 +1,9 @@
 <h2 align="center">
-  Portfolio Website - 12.0<br/>
+  Portfolio Website - V1.0<br/>
   <a href="https://clarissachng.github.io/" target="_blank">clarissachng.github.io</a>
 </h2>
 <div align="center">
-  <img alt="Demo" src="./asset/webpage-pic.png" />
+  <img alt="Demo" src="webpage-pic.png" />
 </div>
 
 <br/>
@@ -11,7 +11,8 @@
 
 ## TL;DR
 
-My personal portfolio <a href="https://clarissachng.github.io/" target="_blank">clarissachng.github.io</a> which features some of my github projects as well as my resume and technical skills.<br/>
+My personal portfolio <a href="https://clarissachng.github.io/" target="_blank">clarissachng.github.io</a> 
+which features summarises my experience and projects as well as my technical skills.<br/>
 
 ## Built With
 
