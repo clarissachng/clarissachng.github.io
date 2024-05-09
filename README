@@ -1,0 +1,4 @@
+Here is my portfolio V1.0!
+print "<a href='https://clarissachng.github.io/'>Click here to visit</a>";
+print "<img src='./assets/webpage-pic.png'>";
+
