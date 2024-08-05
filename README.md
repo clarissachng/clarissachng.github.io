@@ -1,4 +1,4 @@
-<h2 align="center">
+<!-- <h2 align="center">
   Portfolio Website - V1.0<br/>
   <a href="https://clarissachng.github.io/" target="_blank">clarissachng.github.io</a>
 </h2>
@@ -25,4 +25,4 @@ This project was built using these technologies.
 ## Contact Me
 Do reach out to me if you have any feedbacks or questions through the contact information provided in my portfolio website!
 
-I'm always open to new opportunities and collaborations. Let's connect! Thank you~
+I'm always open to new opportunities and collaborations. Let's connect! Thank you~ -->
