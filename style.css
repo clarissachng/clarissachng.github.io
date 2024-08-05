@@ -354,9 +354,15 @@ button.dropbtn {
 }
 
 .intro-3 {
-    width:40%;
-    background-color: var(--blue);
-}
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 40%;
+    height: auto;
+    background-image: url("/assets/shapes/6.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+}   
 
 .intro-4 {
     width: 60%;

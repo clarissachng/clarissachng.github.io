@@ -39,5 +39,27 @@ jQuery(function($){
         var textPosition = Math.round($(window).scrollTop() / $(window).height() * 60);
         $('.horizontal-scroll').css('transform', 'translateX(' + (textPosition - 130) + '%)');
     });
-    
+
+	// Change Image Animation
+	function preloadImages(imgList) {
+		imgList.forEach(function(img) {
+			var newImg = new Image();
+			newImg.src = img;
+		});
+	}
+	
+	var myElement = document.getElementById('intro-shape');
+	var imgList = ["/assets/shapes/3.png", "/assets/shapes/5.png", "/assets/shapes/4.png", "/assets/shapes/7.png", "/assets/shapes/8.png"];
+	
+	preloadImages(imgList);
+	
+	function changeImage (myElement, imgList) {
+		setInterval(function(){
+			var randomImage = Math.floor(Math.random() * imgList.length);
+			myElement.style.backgroundImage = "url('" + imgList[randomImage] + "')";
+		}, 1000); // 1500ms or 1.5 seconds
+	}
+	
+	changeImage(myElement, imgList);
+	
 })
