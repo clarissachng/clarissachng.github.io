@@ -1,6 +1,43 @@
-function toggleMenu() {
-  const menu = document.querySelector(".menu-links");
-  const icon = document.querySelector(".hamburger-icon");
-  menu.classList.toggle("open");
-  icon.classList.toggle("open");
-}
+jQuery(function($){
+	$(document).ready(function(){
+
+		var $window = $(window),
+				win_height_padded = $window.height() * 0.8
+
+		$window.on('scroll', setInterval(maskinleftload, 100));
+
+		function maskinleftload() {
+			var scrolled = $window.scrollTop();
+			$(".element-fade-up:not(.animated)").each(function () {
+				var $this = $(this),
+						offsetTop = $this.offset().top;
+				if (scrolled + win_height_padded > offsetTop) {
+					if ($this.data('timeout')) {
+						window.setTimeout(
+							function () {
+								$this.addClass('triggered ' + $this.data('animation'));
+							}, parseInt($this.data('timeout'), 10));
+					} else { $this.addClass('triggered ' + $this.data('animation')); }
+				}
+			});
+		}
+	})
+
+    // GIF Name Animation
+    $(document).ready(function() {
+        const $text = $(".text");
+        const chars = $text.text().split("");
+        $text.html(
+            $.map(chars, function(char, i) {
+                return `<span style="transform:rotate(${i * 8.125}deg)">${char}</span>`;
+            }).join("")
+        );
+    });
+
+    // Horizontal Scroll Animation
+    $(window).on('scroll', function() {
+        var textPosition = Math.round($(window).scrollTop() / $(window).height() * 60);
+        $('.horizontal-scroll').css('transform', 'translateX(' + (textPosition - 130) + '%)');
+    });
+    
+})

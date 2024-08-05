@@ -1,472 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="/script.js"></script>
+    
+
     <title>clarissa.</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-    <link rel="icon" href="./assets/icon.png">
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Clarissa</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Clarissa</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+    <link rel="icon" href="/assets/tab-logo.png">
+</head>
+<body>
+
+    <!-- top menu -->
+    <div class="topnav">
+        <div class="topnav-right">
+            <a href="index.html">
+            <img src="/assets/logo.jpg" alt="logo">
+            </a>
         </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        
+        <div class="topnav-left">
+            <a href="about.html">about</a>
+                <a href="/index.html/#projects" >projects</a>
+            <a href="https://drive.google.com/file/d/1eWps08du_o6mr7OGhIGmVAmP2OzhEwxO/view?usp=sharing" target="_blank">resume</a>
+            <a href="https://drive.google.com/file/d/13wM4XPXzgTPqEsJSqjg9p_nK3XLDD1TZ/view?usp=drive_link" target="_blank">portfolio</a>
+
         </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="Clarissa profile picture" />
-      </div>
-      <div class="section-text">
-        <p class="hello">Hello, I'm</p>
-        <h1 class="name">Clarissa</h1>
-        <p class="short-desc">Computer Science student <br> at University of Bristol</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
+
+    </div>
+
+    <!-- big header -->
+     <div class="header">
+
+        <div class="header-left element-fade-up">
+            <div class="gif"></div>
+            <div class="text">clarissa ✿ clarissa ✿ clarissa ✿ clarissa ✿
+            </div>
         </div>
-        <div id="socials-container">
-            <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="linkedin-icon"
-            onclick="window.open('https://www.linkedin.com/in/clarissa-chng/', '_blank')"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="github-icon"
-            onclick="window.open('https://github.com/clarissachng', '_blank')"
-          />
+
+        <div class="header-right element-fade-up">
+            <h2>student. <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#clip0_104_215)"> <path fill-rule="evenodd" clip-rule="evenodd" d="M100 100C100 100 112.5 66.5265 112.5 42.8571C112.5 19.1878 106.904 0 100 0C93.0964 0 87.5 19.1878 87.5 42.8571C87.5 66.5265 100 100 100 100ZM100 100C100 100 114.831 132.508 131.567 149.245C148.304 165.982 165.829 175.592 170.711 170.711C175.592 165.829 165.982 148.304 149.245 131.567C132.508 114.831 100 100 100 100ZM100 100C100 100 133.474 87.5 157.143 87.5C180.812 87.5 200 93.0964 200 100C200 106.904 180.812 112.5 157.143 112.5C133.474 112.5 100 100 100 100ZM100 100C100 100 67.4918 114.831 50.755 131.567C34.0183 148.304 24.4077 165.829 29.2893 170.711C34.1709 175.592 51.696 165.982 68.4327 149.245C85.1695 132.508 100 100 100 100ZM100 100L100 100C100.028 100.074 112.5 133.5 112.5 157.143C112.5 180.812 106.904 200 100 200C93.0964 200 87.5 180.812 87.5 157.143C87.5 133.474 100 100 100 100ZM100 100C100 100 66.5265 87.5 42.8571 87.5C19.1878 87.5 0 93.0964 0 100C0 106.904 19.1878 112.5 42.8571 112.5C66.5265 112.5 100 100 100 100ZM100 99.9999C100 99.9999 132.508 85.1694 149.245 68.4327C165.982 51.6959 175.592 34.1708 170.711 29.2893C165.829 24.4077 148.304 34.0183 131.567 50.755C114.831 67.4918 100 99.9999 100 99.9999ZM68.4327 50.755C85.1695 67.4918 100 100 100 100C100 100 67.4918 85.1695 50.7551 68.4327C34.0183 51.696 24.4078 34.1709 29.2893 29.2893C34.1709 24.4078 51.696 34.0183 68.4327 50.755Z" fill="#FBC687"/> </g> <defs><clipPath id="clip0_104_215"> <rect width="200" height="200" fill="#FBC687"/> </clipPath> </defs> </svg>
+            introvert. <svg width="200" height="200" viewBox="0 0 200 200" fill="#BED8AB" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#clip0_238_1184)"> <path fill-rule="evenodd" clip-rule="evenodd" d="M0.00242398 200C0.000809232 199.834 0 199.667 0 199.5C0 174.111 18.7366 153.097 43.1371 149.533C18.7701 146.188 0 125.286 0 100C0 72.3858 22.3858 50 50 50H50.5C22.7765 50 0.270718 27.6601 0.00242398 0H199.998C199.729 27.6601 177.224 50 149.5 50H150C177.614 50 200 72.3858 200 100C200 125.286 181.23 146.188 156.863 149.533C181.263 153.097 200 174.111 200 199.5C200 199.667 199.999 199.834 199.998 200H0.00242398Z" fill="#BED8AB"/> </g> <defs> <clipPath id="clip0_238_1184"> <rect width="200" height="200" fill="#BED8AB"/> </clipPath> </defs> </svg> 
+        
+            coffee lover.  <svg width="200" height="200" viewBox="0 0 200 200" fill="#F4A299" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#clip0_103_21)"> <path d="M71.5579 16.3347C84.3365 -5.4449 115.825 -5.44489 128.603 16.3347L129.067 17.1257C134.963 27.1733 145.709 33.378 157.358 33.4596L158.276 33.466C183.527 33.6428 199.271 60.9123 186.798 82.8687L186.345 83.6661C180.591 93.7953 180.591 106.205 186.345 116.334L186.798 117.131C199.271 139.088 183.527 166.357 158.276 166.534L157.358 166.54C145.709 166.622 134.963 172.827 129.067 182.874L128.603 183.665C115.825 205.445 84.3365 205.445 71.5579 183.665L71.0938 182.874C65.1986 172.827 54.4517 166.622 42.8027 166.54L41.8856 166.534C16.6346 166.357 0.890585 139.088 13.3629 117.131L13.8159 116.334C19.5698 106.205 19.5698 93.7953 13.8159 83.6661L13.3629 82.8687C0.890585 60.9123 16.6346 33.6428 41.8856 33.466L42.8027 33.4596C54.4518 33.378 65.1986 27.1733 71.0938 17.1257L71.5579 16.3347Z" fill="#F4A299"/> </g> <defs> <clipPath id="clip0_103_21"> <rect width="200" height="200" fill="#F4A299"/> </clipPath> </defs> </svg> 
+
+            curious. <svg width="200" height="200" viewBox="0 0 200 200" fill="#FBEAB0" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#clip0_104_44)"> <path fill-rule="evenodd" clip-rule="evenodd" d="M120 0H80V51.7157L43.4315 15.1472L15.1472 43.4314L51.7158 80H0V120H51.7157L15.1472 156.568L43.4315 184.853L80 148.284V200H120V148.284L156.569 184.853L184.853 156.569L148.284 120H200V80H148.284L184.853 43.4314L156.569 15.1471L120 51.7157V0Z" fill="#FBEAB0"/> </g> <defs> <clipPath id="clip0_104_44"> <rect width="200" height="200" fill="#FBEAB0"/> </clipPath> </defs> </svg>
+
+            observer. <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#clip0_104_40)"> <path d="M100.254 200C97.0998 200 94.4337 197.716 93.6699 194.656C91.2352 184.903 86.5744 174.531 79.6875 163.542C71.5278 150.347 59.8958 138.108 44.7917 126.823C31.6549 116.894 18.5181 110.123 5.38138 106.511C2.27005 105.656 0 102.897 0 99.6702V99.6702C0 96.5066 2.18273 93.7795 5.22473 92.9109C18.1045 89.2335 30.5122 83.2631 42.4479 75C56.1632 65.4514 67.6215 53.993 76.8229 40.625C84.9629 28.7165 90.5507 16.9388 93.5863 5.29207C94.3815 2.24095 97.0676 0 100.221 0V0C103.409 0 106.114 2.29058 106.89 5.3833C108.642 12.3654 111.38 19.512 115.104 26.8229C119.792 35.8507 125.781 44.5312 133.073 52.8646C140.538 61.0243 148.872 68.4028 158.073 75C170.097 83.5231 182.32 89.5111 194.744 92.964C197.792 93.8109 200 96.5244 200 99.6874V99.6874C200 102.898 197.725 105.634 194.629 106.483C186.754 108.642 178.648 112.124 170.313 116.927C160.243 122.83 150.868 129.861 142.187 138.021C133.507 146.007 126.389 154.427 120.833 163.281C113.933 174.293 109.267 184.745 106.837 194.639C106.083 197.708 103.413 200 100.254 200V200Z" fill="#d0bbee"/> </g> <defs> <clipPath id="clip0_104_40"> <rect width="200" height="200" fill="#d0bbee"/> </clipPath> </defs> </svg>
+            explorer. <svg width="200" height="200" viewBox="0 0 200 200" fill="#A8E6E2" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#clip0_104_61)"> <path d="M100 200C93.4028 200 87.3264 198.351 81.7708 195.052C76.3889 191.927 72.0486 187.674 68.75 182.292C65.625 176.736 64.0625 170.66 64.0625 164.062C64.0625 155.729 65.9722 148.785 69.7917 143.229C73.6111 137.674 79.5139 131.163 87.5 123.698C93.4028 118.316 96.3542 113.194 96.3542 108.333V103.646H91.6667C86.2847 103.646 78.9062 109.028 69.5312 119.792C60.3299 130.556 49.1319 135.937 35.9375 135.937C29.3403 135.937 23.2639 134.375 17.7083 131.25C12.3264 127.951 7.98611 123.611 4.6875 118.229C1.5625 112.674 0 106.597 0 100C0 93.4028 1.5625 87.4132 4.6875 82.0312C7.98611 76.4757 12.3264 72.1354 17.7083 69.0104C23.2639 65.7118 29.3403 64.0625 35.9375 64.0625C48.9583 64.0625 60.0694 69.3576 69.2708 79.9479C78.4722 90.5382 85.9375 95.8333 91.6667 95.8333H96.3542V91.6667C96.3542 86.8055 93.4028 81.684 87.5 76.3021L81.5104 70.8333C77.1701 66.8403 73.1771 62.066 69.5312 56.5104C65.8854 50.7812 64.0625 43.9236 64.0625 35.9375C64.0625 29.3403 65.625 23.3507 68.75 17.9688C72.0486 12.4132 76.3889 8.07292 81.7708 4.94791C87.3264 1.6493 93.4028 0 100 0C106.597 0 112.587 1.6493 117.969 4.94791C123.524 8.24652 127.865 12.5868 130.99 17.9688C134.288 23.3507 135.937 29.3403 135.937 35.9375C135.937 48.9583 130.642 60.0694 120.052 69.2708C109.462 78.4722 104.167 85.9375 104.167 91.6667V95.8333H108.333C114.236 95.8333 121.701 90.5382 130.729 79.9479C139.583 69.3576 150.694 64.0625 164.063 64.0625C170.66 64.0625 176.649 65.7118 182.031 69.0104C187.587 72.1354 191.927 76.3889 195.052 81.7708C198.351 87.1528 200 93.2292 200 100C200 106.597 198.351 112.674 195.052 118.229C191.927 123.611 187.587 127.951 182.031 131.25C176.649 134.375 170.66 135.937 164.063 135.937C155.903 135.937 148.872 133.941 142.969 129.948C137.24 125.955 130.816 120.139 123.698 112.5C118.316 106.597 113.194 103.646 108.333 103.646H104.167V108.333C104.167 114.757 109.462 122.222 120.052 130.729C130.642 139.236 135.937 150.347 135.937 164.062C135.937 170.66 134.288 176.736 130.99 182.292C127.865 187.674 123.611 191.927 118.229 195.052C112.847 198.351 106.771 200 100 200Z" fill="#A8E6E2"/> </g> <defs> <clipPath id="clip0_104_61"> <rect width="200" height="200" fill="#A8E6E2"/> </clipPath> </defs> </svg></h2>
         </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">get to know more</p>
-      <h1 class="title">ABOUT ME</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
+
+     </div>
+
+    <!-- Breif Intro -->
+    <div class="intro">
+
+        <div class="intro-top element-fade-up">
+            <div class="intro-1">
+    
+                <h4 class="intro-title">
+                    <div class="emoji">👩🏻‍💻</div>
+                    Web Developement Intern @ BikeBear
+                </h4>
+    
+                <p class="intro-desc">
+                    Assisted with front-end tasks to develop and maintain websites for clients such as <a href="http://twf.mydemobb.com/" target="_blank">TWFHK</a>, <a href="https://vitagen.com.sg/" target="_blank">Vitagen SG</a>, <a href="https://www.catalyst.edu.my/" target="_blank">Catalyst Education</a>, and many more during Summer 2024. 
+                </p>
+    
+            </div>
+    
+            <div class="intro-2">
+    
+                <h4 class="intro-title">
+                    <div class="emoji">👩🏻‍🎓</div>
+                    Preultimate Student @ University of Bristol
+                </h4>
+    
+                <p class="intro-desc">
+                    BSc Computer Science student with modules such as Algorithms, Mathematics, Data Structures, Software Engineering, and more. 
+                </p>
+    
+            </div>
+
         </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="experience">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>Software Engineering Spring Intern @ Amazon, Bloomberg & J.P Morgan 
-                <br>Incoming Software Engineering Summer Intern @ J.P Morgan</p>
-              </p>
+
+        <div class="intro-bottom element-fade-up">
+
+            <div class="intro-3">
+                
             </div>
-            <div class="education">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>BSc Computer Science @ Univeristy of Bristol
-                <br/>Foundation in Science and Engineering @ KICL</p>
+    
+            <div class="intro-4">
+    
+                <h4 class="intro-title">
+                    <div class="emoji">🖥️</div>
+                    Incoming Software Engineering Intern @ J.P. Morgan 2025
+                </h4>
+    
+                <p class="intro-desc">
+                    Offered a place as Summer Analyst in the Software Engineering Program at J.P. Morgan for Summer 2025 through the Spring Into Tech Week 2024.
+                </p>
+    
             </div>
-          </div>
-          <div class="text-container">
-            <p>
-              I am a Computer Science student at the University of Bristol 
-              and I have a passion for using tech for a greater cause 
-              and I am always eager to learn new technologies. 
-              Some people say I'm a <b>fast learner</b>, some say I'm <b>creative</b>, 
-              and I would like to classify myself as an <b>adventurer</b>! 
-              <br><br> Outside of coding, I love arts & crafts, photography and some strategy games! I also enjoy cooking and going on a foodie's adventure!
-              <br> Fun fact: I love talking about personality types and could bring some heated discussions about it
-            </p>
-          </div>
+
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">explore my</p>
-      <h1 class="title">SKILLS</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">PROGRAMMING LANGUAGES</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/coding-icon/c.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>C</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/coding-icon/haskell.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Haskell</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/coding-icon/java.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Java</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/coding-icon/python.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/coding-icon/html.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/coding-icon/css.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
+
+    </div>
+
+    
+
+    <div class="featured" id="projects">
+
+        <!-- Featured Projects -->
+
+        <div class="horizontal-scroll">
+            <div class="scroll-text">
+                <h2 style="color: #F4A299;">featured works ✿ </h2>
+                <h2 style="color: #FBC687;">featured works ✿ </h2>
+                <h2 style="color: #f9e19a;">featured works ✿ </h2>
+                <h2 style="color: #BED8AB;">featured works ✿ </h2>
+                <h2 style="color: #C4DCFA;">featured works ✿ </h2>
+                <h2 style="color: #d0bbee;">featured works ✿ </h2>
             </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">TOOLS</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/experience-icon/vscode.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>VS Code</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/experience-icon/intellij.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>IntelliJ IDEA</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/experience-icon/google.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>G-Suite</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/experience-icon/canva.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Canva</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/experience-icon/office365.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Office 365</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/experience-icon/git.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">LANGUAGES</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/experience-icon/languages.png"
-                  alt="Languages icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>English</h3>
-                  <p>Native/ Bilingual</p>
-                </div>
-              </article>
-              <article>
-                <img
-                src="./assets/experience-icon/languages.png"
-                  alt="Languages icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Chinese/ Mandarin</h3>
-                  <p>Native/ Bilingual</p>
-                </div>
-              </article>
-              <article>
-                <img
-                src="./assets/experience-icon/languages.png"
-                  alt="Languages icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Bahasa Malaysia</h3>
-                  <p>Professional</p>
-                </div>
-              </article>
-              <article>
-                <img
-                src="./assets/experience-icon/languages.png"
-                  alt="Languages icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>French</h3>
-                  <p>Basic Classroom</p>
-                </div>
-              </article>
-              <article>
-                <img
-                src="./assets/experience-icon/languages.png"
-                  alt="Languages icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Cantonese</h3>
-                  <p>Basic Classroom</p>
-                </div>
-              </article>
-            </div>
-          </div>
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">take a look at my</p>
-      <h1 class="title">PROJECTS / WORK</h1>
-      <!-- <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
+
+        <div class="projects-wrapper">
+            <h5 class="element-fade-up"> Click on the image to view their website.</h5>
+            <div class="project-container element-fade-up">
+                <a href="#" target="_blank">
+                    <img src="assets/personalweb.png" alt="">
+                </a>
+                <div class="project-desc">
+                    <h3>Personal Website</h3>
+                    <h5 style="color:#F4A299">Mobile Responsive Coming Soon</h5>
+                    <p>Developed to website to showcase my skills and experiences using HTML, CSS and Javascript (jQuery Library).</p>
+                    <div id="container">
+                        <button class="learn-more">
+                        <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">Learn More</span>
+                        </button>
+                    </div>
+                </div>
+                
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
+
+            <div class="project-container element-fade-up">
+                <a href="http://twf.mydemobb.com/" target="_blank">
+                    <img src="assets/TWF.png">
+                </a>
+                <div class="project-desc">
+                    <h3>TWFHK</h3>
+                    
+                    <p>As a web development intern @ Bikebear, I helped to develop the pages and innerpages for The Women's Foundation Hong Kong (TWFHK) using WordPress and front-end stacks such as HTML, CSS, Javascript (Using jQuery Library).</p>
+                    
+                    <div id="container">
+                        <button class="learn-more">
+                        <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">Learn More</span>
+                        </button>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
+
+            <div class="project-container element-fade-up">
+                <a href="https://www.catalyst.edu.my/" target="_blank">
+                    <img src="assets/catalyst.png" alt="">
+                </a>
+                
+                <div class="project-desc">
+                    <h3>Catalyst Education</h3>
+                    <p>As a web development intern @ Bikebear, I helped to improve and develop pages for Catalyst Education, a tuition center based in Malaysia using WordPress, HTML, CSS and Javascript (jQuery Library).</p>
+                    <div id="container">
+                        <button class="learn-more">
+                        <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">Learn More</span>
+                        </button>
+                    </div>
+                </div>
             </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div> -->
-        <h2> COMING UP SOON! </h2>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">interested in working together?</p>
-      <h1 class="title">CONTACT ME!</h1> 
-      <p class="contact-decs"> I'm always looking for opportunities to develop myself! <br>
-      If you have any, feel free to contact me! </p>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:clarissachnggg@gmail.com">clarissachnggg@gmail.com</a></p>
         </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+
+    </div>
+
+
+    <!-- Work together -->
+
+    <div class="work-tgt element-fade-up">
+        
+        <img src="assets/clarlogo.gif">
+        <h2>let's work together! :)</h2>
+
+        <div class="contact">
+            <a href="https://www.linkedin.com/in/clarissa-chng/" target="_blank">LinkedIn</a>
+            <a href="mailto:clarissachnggg@gmail.com">Email</a>
+            <a href="https://drive.google.com/file/d/1eWps08du_o6mr7OGhIGmVAmP2OzhEwxO/view?usp=sharing" target="_blank">Resume</a>
         </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2024 Clarissa. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+        
+    </div>
+
+</body>
 </html>
