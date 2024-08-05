@@ -456,7 +456,7 @@ button.dropbtn {
     color: white;
     background-color: var(--purple);
     transition: 0.3s ease-in-out;
-    order: 3px solid var(--purple);
+    border: 3px solid var(--purple);
     text-decoration: none !important;
 }
 
@@ -626,14 +626,35 @@ h2.breif-txt {
 
     .intro-1, .intro-2, .intro-4 {
         width: 100%;
+        border-radius: 20px;
+        padding: 6.5vw 7.5vw;
+        margin: 3vw 0;
     }
 
     .intro-3 {
         display: none;
     }
 
+    .projects-wrapper {
+        padding: 15.5vw var(--horizontal) 0;
+    }
+
     .project-container {
-        padding: 2vx 0;
+        padding: 5vw 0;
+    }
+
+    .work-tgt img {
+        width: 30vw;
+    }
+
+    .contact {
+        padding-top: 5vw;
+        gap: 5vw;
+    }
+
+    .contact a {
+        padding: 2vw 5vw;
+        border: 1px solid var(--purple);
     }
 
     .skills {
