@@ -156,7 +156,7 @@ button {
     transform: rotate(45deg);
   }
 
-  button.learn-more .button-text {
+  button.learn-more .button-text a {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: absolute;
     top: 0;
@@ -166,7 +166,7 @@ button {
     padding: 0.75rem 0;
     margin: 0 0 0 1.85rem;
     font-weight: 500;
-    color: var(--purple);
+    color: var(--purple) !important;
     line-height: 1.6;
     text-align: center;
   }
@@ -180,8 +180,9 @@ button {
     transform: translate(1rem, 0);
   }
   
-  button:hover .button-text {
+  button:hover .button-text a {
     color: white !important;
+    text-decoration: none !important;
   }
 
 .element-fade-up {
