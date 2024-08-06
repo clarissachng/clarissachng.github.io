@@ -611,13 +611,20 @@ h2.breif-txt {
     gap: 1.25vw;
 }
 
+/* project pages */
 .project-header {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: -1;
+    padding: 7vw var(--horizontal);
+
+}
+
+.project-header.clarissa {
     background: url("assets/projects/clarissa/headerbackground.png");
     background-size: cover;
     background-position: center;
-    display: flex;
-    flex-direction: column;
-    padding: 7vw var(--horizontal);
 }
 
 .project-logo {
@@ -636,6 +643,14 @@ h2.breif-txt {
 img.main-mock {
     height: 25vw;
 }
+
+/* coursework page */
+.cw-header {
+    padding: 8vw var(--horizontal) 25vw;
+    position: relative;
+}
+
+
 @media screen and (max-width: 600px) {
 
     h2 {
