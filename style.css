@@ -654,23 +654,21 @@ img.main-mock {
     padding: 0 2vw 3vw;
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
-.footer-right {
+.footer-nav, .footer-socials {
     display: flex;
     flex-direction: column;
-    row-gap: 15px;
+    row-gap: 1px;
 }
 
-.footer-nav {
-    display: flex;
-    gap: 16px;
+.footer-tm {
+    text-align: right;
 }
-
-.footer-socials {
-    display: flex;
-    gap: 20px;
-    justify-content: flex-end;
+.footer p, .footer a {
+    font-size: 0.75vw !important;
+    font-weight: 500 !important;
 }
 
 @media screen and (max-width: 600px) {
