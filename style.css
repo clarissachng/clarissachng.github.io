@@ -201,7 +201,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1.5vw;
+    padding: 0 2vw;
     margin-top: 1vw;
 }
 
@@ -650,6 +650,28 @@ img.main-mock {
     position: relative;
 }
 
+.footer {
+    padding: 0 2vw 3vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+}
 
 @media screen and (max-width: 600px) {
 
