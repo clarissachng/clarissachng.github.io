@@ -585,14 +585,17 @@ h2.breif-txt {
 
 .skills-1 {
     background-color: var(--blue);
+    opacity: 0.9;
 }
 
 .skills-2 {
     background-color: var(--red);
+    opacity: 0.9;
 }
 
 .skills-3 {
     background-color: var(--purple);
+    opacity: 0.9;
 }
 
 .skills-desc {
@@ -608,6 +611,31 @@ h2.breif-txt {
     gap: 1.25vw;
 }
 
+.project-header {
+    background: url("assets/projects/clarissa/headerbackground.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    padding: 7vw var(--horizontal);
+}
+
+.project-logo {
+    margin-bottom: 3vw;
+    text-align: center;
+}
+
+.project-logo img {
+    height: 5vw;
+}
+
+.project-mock {
+    text-align: center;
+}
+
+img.main-mock {
+    height: 25vw;
+}
 @media screen and (max-width: 600px) {
 
     h2 {
