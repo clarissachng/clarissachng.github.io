@@ -651,7 +651,7 @@ img.main-mock {
 }
 
 .footer {
-    padding: 0 2vw 3vw;
+    padding: 0 2vw 36px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
