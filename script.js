@@ -61,5 +61,4 @@ jQuery(function($){
 	}
 	
 	changeImage(myElement, imgList);
-	
 })
