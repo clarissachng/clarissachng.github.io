@@ -22,9 +22,9 @@ This project was built using these technologies.
 - CSS 
 - JavaScript (jQuery)
 
-## Built With
+## Next Update
 
-Mobile responsiveness is NOT ready yet! 
+Mobile and Tablet Responsiveness, Extra contents!
 
 ## Contact Me
 Do reach out to me if you have any feedbacks or questions through the contact information provided in my portfolio website!
