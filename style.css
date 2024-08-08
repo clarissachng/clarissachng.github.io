@@ -867,6 +867,7 @@ img.main-mock {
     .footer {
         flex-direction: column;
         padding: 0 5vw;
+        align-items: flex-start;
     }
 
     .footer-bottom {
