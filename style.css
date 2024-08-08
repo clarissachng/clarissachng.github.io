@@ -835,4 +835,43 @@ img.main-mock {
         border-bottom: 1px solid var(--black);
     }
 
+    .about {
+        flex-direction: column;
+    }
+
+    .about-right h2 {
+        margin-bottom: 5vw;
+    }
+
+    .about-left img {
+        width: 100%;
+        height: 55vw;
+        object-fit: cover;
+        margin-bottom: 5vw;
+    }
+
+    .skills-left, .skills-right {
+        width: 100%;
+    }
+
+    .skills-1, .skills-2, .skills-3 {
+        padding: 6vw;
+        margin: 8vw 0vw;
+    }
+
+    .skills-3 {
+        margin-top: 0;
+    }
+
+    /* footer */
+    .footer {
+        flex-direction: column;
+        padding: 0 5vw;
+    }
+
+    .footer-bottom {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
 }
