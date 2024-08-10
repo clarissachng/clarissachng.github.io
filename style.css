@@ -396,6 +396,7 @@ button.dropbtn {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    overflow: hidden;
 }
 
 .projects-wrapper {
@@ -571,6 +572,11 @@ h2.breif-txt {
 .skills {
     padding: 7vw var(--horizontal) 5vw;
     display: flex;
+    overflow: hidden;
+}
+
+.skills .horizontal-scroll {
+    top: 0;
 }
 
 .skills-left, .skills-right {
@@ -634,6 +640,7 @@ h2.breif-txt {
 
 .project-logo img {
     height: 5vw;
+    
 }
 
 .project-mock {
@@ -644,6 +651,25 @@ img.main-mock {
     height: 25vw;
 }
 
+img.left-mock {
+    width: 25vw;
+    position: absolute;
+    left: 15%;
+    bottom: 14%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+img.right-mock {
+    bottom: 12%;
+    width: 20vw;
+    position: absolute;
+    right: 17%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.project-overview h5 {
+    color: var(--purple);
+}
 /* coursework page */
 .cw-header {
     padding: 8vw var(--horizontal) 25vw;
@@ -653,6 +679,7 @@ img.main-mock {
 .footer {
     padding: 0 2vw 36px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-end;
 }
