@@ -1,4 +1,12 @@
 jQuery(function($){
+	// $(document).ready(function() {
+	// 	$(".hamburger").click(function() {
+	// 		$(this).toggleClass("active");
+	// 		$(".topnav-left").toggleClass("active");
+	// 	});
+	// });
+
+	
 	$(document).ready(function(){
 
 		var $window = $(window),

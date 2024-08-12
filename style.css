@@ -31,7 +31,7 @@ body {
 
 h1 {
     /* Desktop/H1 */
-    font-size: 4.008vw;
+    font-size: 5.208vw;
     font-style: normal;
     font-weight: 700;
     line-height: 1.5; /* 110% */
@@ -40,7 +40,7 @@ h1 {
 
 h2 {
     /* Desktop/H2 */
-    font-size: 3.042vw;
+    font-size: 3.542vw;
     font-style: normal;
     font-weight: 600;
     line-height: 1.2; /* 114.706% */
@@ -49,7 +49,7 @@ h2 {
 
 h3 {
     /* Desktop/H3 */
-    font-size: 2.55vw;
+    font-size: 2.188vw;
     font-style: normal;
     font-weight: 600;
     line-height: 1.2; /* 120% */
@@ -58,7 +58,7 @@ h3 {
 
 h4 {
     /* Desktop/H4 */
-    font-size: 2.05vw;
+    font-size: 1.354vw;
     font-style: normal;
     font-weight: 500;
     line-height: 1.3; /* 130.769% */
@@ -67,17 +67,18 @@ h4 {
 
 h5 {
     /* Desktop/H5 */
-    font-size: 1.5vw;
+    font-size: 0.781vw;
     font-style: normal;
     font-weight: 600;
-    line-height: 1.25; /* 125% */
+    line-height: 1.25;
     letter-spacing: 0.042vw;
     text-transform: uppercase;
+    margin-bottom: 5px;
 }
 
 p {
     /* Desktop/P */
-    font-size: 1.15vw;
+    font-size: 0.99vw;
     font-style: normal;
     font-weight: 400;
     line-height: 1.55; /* 155.556% */
@@ -197,6 +198,9 @@ button {
 }
 
 /* Navigation */
+/* Default styles for the topnav */
+
+
 .topnav {
     display: flex;
     justify-content: space-between;
@@ -265,7 +269,9 @@ button.dropbtn {
     text-underline-position: under !important;
 }
 
-/* Header */
+/* ================
+    MAIN PAGE
+=================== */
 .header {
     display: flex;
     justify-content: center;
@@ -369,6 +375,11 @@ button.dropbtn {
 .intro-4 {
     width: 60%;
     background-color: var(--red);
+}
+
+p.intro-desc {
+    margin-top: 12px;
+    font-size: larger;
 }
 
 /* featured work section */
@@ -617,7 +628,9 @@ h2.breif-txt {
     gap: 1.25vw;
 }
 
-/* project pages */
+/* ================
+    PROJECT PAGE
+=================== */
 .project-header {
     display: flex;
     flex-direction: column;
@@ -670,11 +683,35 @@ img.right-mock {
 .project-overview h5 {
     color: var(--purple);
 }
+
+.project-overview {
+    padding: 3vw var(--horizontal);
+}
+
+.overview-top {
+    display: flex;
+    padding-bottom: 2vw;
+    gap: 5vw;
+}
+
+.overview-right {
+    flex: 1;
+}
+
+.overview-bottom {
+    display: flex;
+    gap: 4vw;
+}
+
 /* coursework page */
 .cw-header {
     padding: 8vw var(--horizontal) 25vw;
     position: relative;
 }
+
+/* ================
+    FOOTER
+=================== */
 
 .footer {
     padding: 0 2vw 36px;
@@ -756,6 +793,7 @@ img.right-mock {
     .header-right h2 {
         text-align: center;
         margin-top: 6vw;
+        font-size: 3.25vw;
     }
 
     .header-right svg {
