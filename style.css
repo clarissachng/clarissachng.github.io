@@ -329,6 +329,10 @@ button.dropbtn {
     height: 2.25vw;
 }
 
+.header-right h2 {
+    font-size: 3.25vw;
+}
+
 /* intro */
 .intro {
     display: flex;
@@ -613,6 +617,14 @@ h2.breif-txt {
 .skills-3 {
     background-color: var(--purple);
     opacity: 0.9;
+}
+
+.song-charts {
+    padding: 0 2vw;
+}
+
+.song-charts iframe {
+    margin: 0.5vw 0;
 }
 
 .skills-desc {
@@ -926,14 +938,6 @@ img.right-mock {
 
     .skills-3 {
         margin-top: 0;
-    }
-
-    .song-charts {
-        padding: 0 2vw;
-    }
-
-    .song-charts iframe {
-        margin: 0.5vw 0;
     }
 
     /* footer */
