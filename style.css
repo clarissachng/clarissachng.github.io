@@ -928,6 +928,14 @@ img.right-mock {
         margin-top: 0;
     }
 
+    .song-charts {
+        padding: 0 2vw;
+    }
+
+    .song-charts iframe {
+        margin: 0.5vw 0;
+    }
+
     /* footer */
     .footer {
         flex-direction: column;
