@@ -645,7 +645,7 @@ h2.breif-txt {
 =================== */
 
 .project-header.clarissa {
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(208,187,238,0.5) 100%);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 5%, rgba(208,187,238,0.5) 100%);
     position: relative;
     padding: 5vw var(--horizontal);
 }
@@ -684,11 +684,11 @@ img.right-mock {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-.project-overview h5{
+.project-overview h5, .project-section4 h5 {
     color: #9a69e0;
 }
 
-.project-overview, .project-section, .project-discover, .project-final {
+.project-overview, .project-section, .section-title, .project-section2, .project-section3, .project-section4 {
     padding: 3vw 15vw;
 }
 
@@ -696,6 +696,10 @@ img.right-mock {
     display: flex;
     padding-bottom: 2vw;
     gap: 5vw;
+}
+
+.overview-left {
+    width: 45%;
 }
 
 .overview-right {
@@ -731,12 +735,104 @@ img.right-mock {
     margin-bottom: 0.75vw;
 }
 
-.project-discover {
-    background-color: #ae87e6
-
-}
 .section-title {
+    background-color: mediumpurple;
     text-align: center;
+}
+
+.section-title h4 {
+    color: #ded0f2;
+    font-weight: 600;
+}
+
+.section-title h2 {
+    color: white;
+}
+
+.project-section3 {
+    background-color: var(--purple);
+}
+
+.project-audit {
+    margin: 2vw auto;
+    padding: 2vw;
+    background-color: #ded0f2;
+    border: 2px solid darkgrey;
+    border-radius: 20px;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.img-caption {
+    margin: 0.75vw auto;
+    text-align: center;
+}
+
+.img-caption i {
+    color: grey;
+    font-weight: 500;
+}
+
+.audit-explanation h4 {
+    color: mediumpurple;
+    font-weight: 600;
+}
+
+.audit-explanation ul li {
+    margin: 10px 0 15px 25px;
+}
+
+.project-section4 ul li {
+    margin: 0 0 15px 20px;
+}
+
+.wireframes {
+    margin: 6vw 0;
+}
+
+.wireframe-container {
+    display: flex;
+    gap: 2vw;
+    margin: 2vw 0;
+}
+
+.wireframe-container .desc {
+    width: 25%;
+}
+.wireframe-container .img {
+    flex: 1;
+    display: flex;
+}
+
+.wireframe-container .img img {
+    width: 100%;
+    height: 35vw;
+    object-fit: cover;
+}
+
+
+
+/* twf */
+
+.project-header.twf {
+    background: linear-gradient(0deg, rgba(240,240,235,1) 5%, rgba(112,172,251,1) 100%);
+    position: relative;
+    padding: 5vw var(--horizontal);
+}
+
+.twf .project-mock img.main-mock {
+    height: 20vw;
+}
+
+.project-overview.twf {
+    background: linear-gradient(0deg, rgba(255,255,255,1) 30%, rgba(240,240,235,1) 100%);
+}
+
+.project-overview.twf h5 {
+    color: #D7232C;
 }
 
 /* coursework page */
