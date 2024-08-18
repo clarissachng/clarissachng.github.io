@@ -646,14 +646,8 @@ h2.breif-txt {
 
 .project-header.clarissa {
     background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(208,187,238,0.5) 100%);
-}
-
-.project-top {
-    display: flex;
-    flex-direction: column;
     position: relative;
     padding: 5vw var(--horizontal);
-
 }
 
 .project-logo {
@@ -683,19 +677,19 @@ img.left-mock {
 }
 
 img.right-mock {
-    bottom: 12%;
+    bottom: 15%;
     width: 20vw;
     position: absolute;
     right: 15%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-.project-overview h5 {
+.project-overview h5{
     color: #9a69e0;
 }
 
-.project-overview {
-    padding: 3vw var(--horizontal);
+.project-overview, .project-section, .project-discover, .project-final {
+    padding: 3vw 15vw;
 }
 
 .overview-top {
@@ -711,6 +705,38 @@ img.right-mock {
 .overview-bottom {
     display: flex;
     gap: 4vw;
+}
+
+.project-section {
+    background-color: var(--purple);
+}
+
+.project-section h5 {
+    color: white;
+    margin-right: 3vw;
+    width: 100px;
+}
+
+.project-explain {
+    display: flex;
+    gap: 5vw;
+    padding: 1.5vw 0;
+}
+
+.solution img {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 0.75vw;
+}
+
+.project-discover {
+    background-color: #ae87e6
+
+}
+.section-title {
+    text-align: center;
 }
 
 /* coursework page */
@@ -744,7 +770,6 @@ img.right-mock {
     font-size: 0.75vw !important;
     font-weight: 500 !important;
 }
-
 @media screen and (max-width: 600px) {
 
     h2 {
