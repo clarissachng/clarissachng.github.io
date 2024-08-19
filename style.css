@@ -842,6 +842,20 @@ img.right-mock {
     border-radius: 20px;
 }
 
+.explore-more-wrapper {
+    display: flex;
+    gap: 3vw;
+}
+
+.explore-more-container {
+    width: 50%;
+}
+
+.explore-more-container img {
+    width: 100%;
+    margin: 1vw 0;
+    border-radius: 20px;
+}
 
 
 /* twf */
