@@ -688,7 +688,7 @@ img.right-mock {
     color: #9a69e0;
 }
 
-.project-overview, .project-section, .section-title, .project-section2, .project-section3, .project-section4, .project-section5  {
+.project-overview, .project-section, .section-title, .project-section2, .project-section3, .project-section4, .project-section5, .explore-more  {
     padding: 3vw 15vw;
 }
 
@@ -826,6 +826,10 @@ img.right-mock {
 
 .final-txt {
     width: 25%;
+}
+
+.wireframe-container .desc h4 , .final-txt h4 {
+    margin-bottom: 1vw;
 }
 
 .final-img {
