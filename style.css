@@ -741,7 +741,7 @@ img.right-mock {
 }
 
 .section-title h4 {
-    color: #ded0f2;
+    color: #E3E3E3;
     font-weight: 600;
 }
 
@@ -861,7 +861,7 @@ img.right-mock {
 /* twf */
 
 .project-header.twf {
-    background: linear-gradient(0deg, rgba(240,240,235,1) 5%, rgba(112,172,251,1) 100%);
+    background: linear-gradient(0deg, rgba(240,240,235,1) 10%, rgba(215,35,44, 0.4) 43%, rgba(255,255,255,1) 100%);
     position: relative;
     padding: 5vw var(--horizontal);
 }
@@ -871,11 +871,20 @@ img.right-mock {
 }
 
 .project-overview.twf {
-    background: linear-gradient(0deg, rgba(255,255,255,1) 30%, rgba(240,240,235,1) 100%);
+    background: #F0F0EB;
 }
 
 .project-overview.twf h5 {
     color: #D7232C;
+}
+
+.project-section.twf {
+    background: #70ACFB;
+}
+
+.section-title.twf {
+    background-color: #B5131B;
+    text-align: center;
 }
 
 /* coursework page */
@@ -967,7 +976,7 @@ img.right-mock {
     .header-right h2 {
         text-align: center;
         margin-top: 6vw;
-        font-size: 3.25vw;
+        font-size: 6.25vw;
     }
 
     .header-right svg {
@@ -1061,7 +1070,7 @@ img.right-mock {
 
     /* footer  */
     .footer p, .footer a {
-        font-size: max(15px,.91vw) !important;
+        font-size: max(10px,.91vw) !important;
     }
     .footer {
         flex-direction: column;
