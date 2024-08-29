@@ -921,6 +921,10 @@ img.right-mock {
 }
 @media screen and (max-width: 600px) {
 
+    :root{
+        --horizontal: 3vw;
+    }
+
     h2 {
         font-size: 6.42vw;
     }
@@ -937,8 +941,36 @@ img.right-mock {
         letter-spacing: -0.52px;
     }
 
+    h5 {
+        font-size: 2.781vw;
+        margin-bottom: 1.956vw;
+    }
+
     p {
         font-size: 3.15vw;
+    }
+
+    button.learn-more {
+        width: 10rem;
+    }
+
+    button.learn-more .circle {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+    }
+
+    button.learn-more .circle .icon.arrow::before {
+        top: -2px;
+        right: 50%;
+        width: 8px;
+        height: 8px;
+    }
+
+    button.learn-more .button-text a {
+        padding: 0.25rem 0;
+        margin: 0 0 0 1.85rem;
+        font-size: 4vw;
     }
 
     .topnav {
@@ -1108,8 +1140,124 @@ img.right-mock {
         margin: 8vw 0vw;
     }
 
+
     .skills-3 {
         margin-top: 0;
+    }
+
+    /* ================
+    PROJECT PAGE
+    =================== */
+    .project-header.clarissa {
+        padding: 5vw var(--horizontal) 15vw;
+    }
+
+    .project-logo img {
+        height: 15vw;
+    }
+
+    .project-logo {
+        margin-bottom: 10vw;
+    }
+
+    img.main-mock {
+        height: 55vw;
+    }
+
+    img.left-mock {
+        width: 40vw;
+        left: 5%;
+        bottom: 15%;
+    }
+
+    img.right-mock {
+        width: 35vw;
+        bottom: 15%;
+        right: 3%;
+    }
+
+    .project-overview, .project-section, .project-section2, .project-section3, .project-section4, .project-section5, .explore-more {
+        padding: 3vw 5vw;
+    }
+
+    .section-title {
+        padding: 8vw 15vw;
+    }
+
+    .section-title h4 {
+        margin-bottom: 1.956vw;
+    }
+
+    .overview-top {
+        gap: 3vw;
+        padding-bottom: 5vw;
+        flex-direction: column;
+    }
+
+    .overview-left {
+        width: 100%;
+    }
+
+    .project-explain {
+        padding: 3.5vw 0;
+    }
+
+    .solution img {
+        height: 45%;
+    }
+
+    .audit-explanation ul li {
+        margin: 5px 0 5px 15px;
+    }
+
+    .project-section4 ul li {
+        margin: 0 0 5px 15px;
+    }
+
+    .wireframe-container {
+        display: flex;
+        flex-direction: column;
+        gap: 6vw;
+        margin: 10vw 0;
+    }
+
+    .wireframe-container .img {
+        justify-content: center;
+    }
+
+    .wireframe-container .img img {
+        height: 50vw;
+        object-fit: contain;
+    }
+
+    .wireframe-container .desc {
+        width: 100%;
+    }
+
+    .final-left, .final-right {
+        gap: 5vw;
+        margin: 10vw 0;
+    }
+
+    .final-left{
+        flex-direction: column-reverse;
+    }
+
+    .final-right {
+        flex-direction: column;
+    }
+
+    .final-txt {
+        width: 100%;
+    }
+
+    .explore-more-wrapper {
+        gap: 5vw;
+        flex-direction: column;
+    }
+
+    .explore-more-container {
+        width: 100%;
     }
 
     /* footer */
