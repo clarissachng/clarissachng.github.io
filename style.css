@@ -383,7 +383,6 @@ button.dropbtn {
 
 p.intro-desc {
     margin-top: 12px;
-    font-size: larger;
 }
 
 /* featured work section */
@@ -1161,7 +1160,7 @@ img.right-mock {
     }
 
     img.main-mock {
-        height: 55vw;
+        height: 50vw;
     }
 
     img.left-mock {
@@ -1177,7 +1176,7 @@ img.right-mock {
     }
 
     .project-overview, .project-section, .project-section2, .project-section3, .project-section4, .project-section5, .explore-more {
-        padding: 3vw 5vw;
+        padding: 5vw 10vw;
     }
 
     .section-title {
@@ -1203,7 +1202,7 @@ img.right-mock {
     }
 
     .solution img {
-        height: 45%;
+        height: 40%;
     }
 
     .audit-explanation ul li {
@@ -1212,6 +1211,11 @@ img.right-mock {
 
     .project-section4 ul li {
         margin: 0 0 5px 15px;
+    }
+
+    .project-audit {
+        margin: 5vw auto;
+        padding: 5vw;
     }
 
     .wireframe-container {
