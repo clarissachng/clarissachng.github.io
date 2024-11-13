@@ -59,7 +59,7 @@ body:
     attributes:
       value: |
         Please add all relevant issue metadata to your issue. This includes all relevant: assignees, labels, milestone and relevant branches/pull requests.  
-  - type: dropdown
+  - type: checklist
     id: issue-type
     attributes:
       label: Type of Issue
