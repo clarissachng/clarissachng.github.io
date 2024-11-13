@@ -61,15 +61,15 @@ body:
         Please add all relevant issue metadata to your issue. This includes all relevant: assignees, labels, milestone and relevant branches/pull requests.  
   - type: dropdown
     attributes:
-    label: Type of Issue
-    options:
-      - New Feature
-      - Enchancement/ Improvement
-      - Documentation
-      - Adhoc
-      - Bug
-      required: true
-      validation_message: Please select the type of issue  
+      label: Type of Issue
+      options:
+        - New Feature
+        - Enchancement/ Improvement
+        - Documentation
+        - Adhoc
+        - Bug
+        required: true
+        validation_message: Please select the type of issue  
   - type: textarea
     id: issue-description
     attributes:
