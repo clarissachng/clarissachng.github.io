@@ -97,7 +97,6 @@ body:
         - label: I've added in the assignee (aka. the respective PIC)
         - label: I've set the priority and labels for this issue
 
-
   - type: dropdown
     id: issue-type
     attributes:
@@ -111,6 +110,4 @@ body:
         - 'Adhoc'
         - 'Bug'
         - 'Others'
-      validation:
-        required: true
          
