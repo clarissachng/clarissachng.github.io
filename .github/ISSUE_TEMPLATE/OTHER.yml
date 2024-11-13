@@ -60,24 +60,35 @@ body:
       value: |
         Please add all relevant issue metadata to your issue. This includes all relevant: assignees, labels, milestone and relevant branches/pull requests.  
   - type: dropdown
+    id: issue-type
     attributes:
       label: Type of Issue
       options:
-        - New Feature
-        - Enchancement/ Improvement
-        - Documentation
-        - Adhoc
-        - Bug
+        - label: New Feature
+        - label: Enchancement/ Improvement
+        - label: Documentation
+        - label: Adhoc
+        - label: Bug
         required: true
         validation_message: Please select the type of issue  
   - type: textarea
     id: issue-description
     attributes:
-      label: Issue Description
-      description: A clear and concise description of the issue.
+      label: Is your feature request related to a problem? Please describe.
+      description: Please provide a description for the issue
       placeholder: Describe the issue here.
     validations:
       required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Additional Information
+      description: Please provide a solution for the issue
+      placeholder: Describe the solution here
+    validations:
+      required: true
+
   - type: textarea
     id: additional-information
     attributes:
