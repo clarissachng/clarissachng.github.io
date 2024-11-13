@@ -60,6 +60,22 @@ body:
       value: |
         Please add all relevant issue metadata to your issue. This includes all relevant: assignees, labels, milestone and relevant branches/pull requests.  
 
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: Type of Issue
+      description: Please select the type of issue
+      multiple: false
+      options:
+        - 'New Feature'
+        - 'Enchancement/ Improvement'
+        - 'Documentation'
+        - 'Adhoc'
+        - 'Bug'
+        - 'Others'
+    validations:
+      required: true
+      
   - type: textarea
     id: issue-description
     attributes:
@@ -97,17 +113,5 @@ body:
         - label: I've added in the assignee (aka. the respective PIC)
         - label: I've set the priority and labels for this issue
 
-  - type: dropdown
-    id: issue-type
-    attributes:
-      label: Type of Issue
-      description: Please select the type of issue
-      multiple: false
-      options:
-        - 'New Feature'
-        - 'Enchancement/ Improvement'
-        - 'Documentation'
-        - 'Adhoc'
-        - 'Bug'
-        - 'Others'
+
          
