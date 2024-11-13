@@ -46,14 +46,15 @@
 #       validations:
 #         required: false
 
-name: Other Issue
-description: Some other issue that is neither a feature request nor a bug report.
-projects: ["spe-upb/2023-MarineConservationApp"]
+name: MedicRecall2 Issue Report
+description: MedicRecall2 Main Issue Report Template
+title: "[Type of Issue]"
+projects: ["spe-upb/2024-MedicRecall2"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thank you for filling out an issue form for Marine Conservation App. Please fill out the following information to help us understand your issue.
+        Thank you for filling out an issue form for MedicRecall 2024
   - type: markdown
     attributes:
       value: |
