@@ -477,7 +477,7 @@ p.intro-desc {
 
 .contact a {
     font-family: laca, sans-serif !important;
-    font-size: 10vw;
+    font-size: 0.75vw;
     color: var(--purple);
     text-decoration: none;
     background-color: transparent;
@@ -492,6 +492,19 @@ p.intro-desc {
     transition: 0.3s ease-in-out;
     border: 3px solid var(--purple);
     text-decoration: none !important;
+}
+
+.view-more {
+    margin: 5vw auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2vw;
+}
+
+.top-btn {
+    display: flex;
+    gap: 5vw;
 }
 
   
@@ -511,38 +524,38 @@ p.intro-desc {
 }
 
 .breif .shape1 {
-    left: 13%; 
-    top: 25%;
+    left: 5%; 
+    top: 10%;
     animation-delay: 0;
 }
 
 .breif .shape2 {
-    left: 29%; 
+    left: 25%; 
     top: 22%;
     animation-delay: 100ms; 
 }
 
 .breif .shape3 {
     left: 35%; 
-    top: 40%; 
+    top: 10%; 
     animation-delay: 200ms;
 }
 
 .breif .shape4 {
-    left: 48%; 
-    top: 24%;
+    left: 45%; 
+    top: 8%;
     animation-delay: 300ms; 
 }
 
 .breif .shape5 {
     right: 26%; 
-    top: 30%;
+    top: 20%;
     animation-delay: 400ms;
 }
 
 .breif .shape6 {
     right:10%; 
-    top:20%;
+    top:10%;
     animation-delay: 500ms;
 }
 
