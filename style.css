@@ -524,38 +524,38 @@ p.intro-desc {
 }
 
 .breif .shape1 {
-    left: 5%; 
-    top: 10%;
+    left: 13%; 
+    top: 25%;
     animation-delay: 0;
 }
 
 .breif .shape2 {
-    left: 25%; 
+    left: 29%; 
     top: 22%;
     animation-delay: 100ms; 
 }
 
 .breif .shape3 {
     left: 35%; 
-    top: 10%; 
+    top: 40%; 
     animation-delay: 200ms;
 }
 
 .breif .shape4 {
-    left: 45%; 
-    top: 8%;
+    left: 48%; 
+    top:24%;
     animation-delay: 300ms; 
 }
 
 .breif .shape5 {
     right: 26%; 
-    top: 20%;
+    top: 30%;
     animation-delay: 400ms;
 }
 
 .breif .shape6 {
     right:10%; 
-    top:10%;
+    top:20%;
     animation-delay: 500ms;
 }
 
