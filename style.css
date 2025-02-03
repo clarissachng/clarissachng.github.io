@@ -252,7 +252,7 @@ button {
 button.dropbtn {
     font-size: 1.275vw !important;
     color: var(--black) !important;
-    padding-bottom: 1vw;
+    padding-bottom: 0;
 }
 
 .dropdown {
