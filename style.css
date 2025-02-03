@@ -479,7 +479,7 @@ p.intro-desc {
     margin: 2vw;
     display: flex;
     
-    background: #F0F0EE;
+    background: #e8e9eb;
     border-radius: 2.344vw;
     border: 1px solid lightgray;
     justify-content: space-between;
@@ -496,6 +496,7 @@ p.intro-desc {
 }
 
 .project-container:hover {
+    background-color: #f0f1f3;
     transition: 0.3s ease-in-out;
     box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
     text-decoration: none !important;
@@ -754,6 +755,7 @@ h2.breif-txt {
     padding: 1.5vw;
     border: 1px solid lightgrey;
     border-radius: 0.75vw;
+    flex-direction: column;
 }
 
 .small.project-container:hover {
