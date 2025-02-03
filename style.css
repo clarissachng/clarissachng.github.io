@@ -115,7 +115,7 @@ a {
 
 a:hover {
     color: var(--purple);
-    text-decoration: underline !important;
+    text-decoration: underline;
     text-underline-position: under !important;
 }
 
@@ -469,6 +469,11 @@ p.intro-desc {
     padding: 8.5vw var(--horizontal) 0;
 }
 
+.projects-wrapper a:hover {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
 .project-container {
     padding: 2vw 5vw;
     margin: 2vw;
@@ -492,7 +497,7 @@ p.intro-desc {
 
 .project-container:hover {
     transition: 0.3s ease-in-out;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
     text-decoration: none !important;
 }
 
