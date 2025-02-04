@@ -231,7 +231,7 @@ button {
     justify-content: space-between;
     align-items: center;
     padding: 0 2vw;
-    margin-top: 1vw;
+    margin-top: 2vw;
 }
 
 .topnav-right img {
@@ -294,32 +294,6 @@ button.dropbtn {
     text-decoration: underline !important;
     text-underline-position: under !important;
 }
-
-/* #theme-switch{
-    height: 50px;
-    width: 50px;
-    padding: 0;
-    border-radius: 50%;
-    background-color: var(--dark-btn-bg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#theme-switch svg{
-    fill: var(--black);
-}
-
-#theme-switch svg:last-child{
-    display: none;
-}
-
-.darkmode #theme-switch svg:first-child{
-    display: none;
-}
-.darkmode#theme-switch svg:last-child{
-    display: block;
-} */
 
 /* ================
     MAIN PAGE

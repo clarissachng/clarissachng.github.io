@@ -5,32 +5,6 @@ jQuery(function($){
 	// 		$(".topnav-left").toggleClass("active");
 	// 	});
 	// });
-
-	// $(document).ready(function () {
-	// 	let darkmode = localStorage.getItem('darkmode');
-	// 	const $themeSwitch = $('#theme-switch');
-	
-	// 	const enableDarkMode = () => {
-	// 		$('body').addClass('darkmode');
-	// 		localStorage.setItem('darkmode', 'active');
-	// 	};
-	
-	// 	const disableDarkMode = () => {
-	// 		$('body').removeClass('darkmode');
-	// 		localStorage.setItem('darkmode', null);
-	// 	};
-	
-	// 	$themeSwitch.on('click', function () {
-	// 		darkmode !== "active" ? enableDarkMode() : disableDarkMode();
-	// 		darkmode = localStorage.getItem('darkmode'); // Update state
-	// 	});
-	
-	// 	// Apply dark mode if it was previously enabled
-	// 	if (darkmode === "active") {
-	// 		enableDarkMode();
-	// 	}
-	// });
-	
 	
 	$(document).ready(function(){
 
