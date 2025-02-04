@@ -12,19 +12,6 @@
     --dark-btn-bg:#e6e9ef; 
 }
 
-.darkmode {
-    --red: #f38ba8;
-    --orange: #fab387;
-    --yellow: #f9e2af;
-    --green: #a6e3a1;
-    --blue: #89b4fa;
-    --turquoise: #94e2d5;
-    --purple: #b4befe;
-    --black: white ;
-    --bg: #1e1e2e;
-    --dark-btn-bg:#cdd6f4; 
-}
-
 /* General */
 * {
     margin: 0;
@@ -450,7 +437,7 @@ p.intro-desc {
 
 .project-container {
     padding: 2vw 5vw;
-    margin: 2vw;
+    margin: 5vw 2vw;
     display: flex;
     
     background: #e8e9eb;
@@ -474,6 +461,11 @@ p.intro-desc {
     transition: 0.3s ease-in-out;
     box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
     text-decoration: none !important;
+}
+
+.projects-wrapper a:hover img {
+    filter: drop-shadow( 5px 5px 15px rgba(244, 162, 153, 0.5));
+    transition: 0.3s ease-in-out;
 }
 
 .project-txt:hover{
@@ -730,6 +722,7 @@ h2.breif-txt {
     border: 1px solid lightgrey;
     border-radius: 0.75vw;
     flex-direction: column;
+    margin: 0;
 }
 
 .small.project-container:hover {
