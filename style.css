@@ -323,6 +323,7 @@ button.dropbtn {
     background: none;
     border: none;
     cursor: pointer;
+    color: var(--black) !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -332,6 +333,7 @@ button.dropbtn {
 
     .hamburger {
         display: block;
+        color: var(--black);
     }
 
     .mobile-nav {
@@ -1215,12 +1217,12 @@ img.right-mock {
         display: none;
     }
 
-    .projects-wrapper {
-        padding: 15.5vw var(--horizontal) 0;
+    .view-more h3 {
+        font-size: 4.2vw;
     }
 
-    .project-container {
-        padding: 5vw 0;
+    .projects-wrapper {
+        padding: 15.5vw var(--horizontal) 0;
     }
 
     .work-tgt img {
