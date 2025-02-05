@@ -1,27 +1,38 @@
-<!-- <script src="/script.js"></script> -->
+<script src="/script.js"></script>
 
+<!-- Navigation Bar -->
 <div class="topnav element-fade-up" id="top">
-  <div class="topnav-right">
-      <a href="./">
-          <img src="/assets/logo.jpg" alt="logo">
-      </a>
-  </div>
-  
+    <div class="topnav-right">
+        <a href="./">
+            <img src="/assets/logo.jpg" alt="logo">
+        </a>
+    </div>
 
-  <div class="topnav-left">
-      <a href="./about.html">about</a>
-      <div class="dropdown">
-          <button class="dropbtn">featured</button>
-          <div class="dropdown-content">
-              <a href="./projects.html">Projects/ Works</a>
-              <a href="./courseworks.html">Courseworks</a>
-              <a href="#" style="pointer-events: none;">X-tras *coming soon!</a>
-          </div>
-      </div>
-      <a href="https://drive.google.com/file/d/1JsosH9N5aEjoEijre-LEzv3c-cxerfMN/view?usp=sharing" target="_blank">resume</a>
-      <a href="https://drive.google.com/file/d/13wM4XPXzgTPqEsJSqjg9p_nK3XLDD1TZ/view?usp=drive_link" target="_blank">portfolio</a>
+    <!-- Regular Navigation -->
+    <div class="topnav-left" id="nav-links">
+        <a href="./about.html">about</a>
+        <div class="dropdown">
+            <button class="dropbtn">featured</button>
+            <div class="dropdown-content">
+                <a href="./projects.html">projects/ works</a>
+                <a href="./courseworks.html">courseworks</a>
+                <a href="#" style="pointer-events: none;">X-tras *coming soon!</a>
+            </div>
+        </div>
+        <a href="https://drive.google.com/file/d/1JsosH9N5aEjoEijre-LEzv3c-cxerfMN/view?usp=sharing" target="_blank">resume</a>
+        <a href="https://drive.google.com/file/d/13wM4XPXzgTPqEsJSqjg9p_nK3XLDD1TZ/view?usp=drive_link" target="_blank">portfolio</a>
+    </div>
 
-  </div>
+    <!-- Hamburger Menu Button -->
+    <button class="hamburger" id="hamburger-btn">&#9776;</button>
+</div>
 
- 
+<!-- Mobile Navigation Drawer -->
+<div class="mobile-nav" id="mobile-menu">
+    <a href="./about.html">about</a>
+    <a href="./projects.html">projects/ works</a>
+    <a href="./courseworks.html">courseworks</a>
+    <a href="https://drive.google.com/file/d/1JsosH9N5aEjoEijre-LEzv3c-cxerfMN/view?usp=sharing" target="_blank">resume</a>
+    <a href="https://drive.google.com/file/d/13wM4XPXzgTPqEsJSqjg9p_nK3XLDD1TZ/view?usp=drive_link" target="_blank">portfolio</a>
+    <button class="close-btn" id="close-btn">&times;</button>
 </div>

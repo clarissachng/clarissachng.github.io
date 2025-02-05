@@ -5,6 +5,26 @@ jQuery(function($){
 	// 		$(".topnav-left").toggleClass("active");
 	// 	});
 	// });
+
+	$(document).ready(function () {
+		// Open Menu
+		$("#hamburger-btn").click(function () {
+			$("#mobile-menu").addClass("active");
+		});
+	
+		// Close Menu
+		$("#close-btn").click(function () {
+			$("#mobile-menu").removeClass("active");
+		});
+	
+		// Close Menu when clicking outside
+		$(document).click(function (event) {
+			if (!$(event.target).closest("#mobile-menu, #hamburger-btn").length) {
+				$("#mobile-menu").removeClass("active");
+			}
+		});
+	});
+	
 	
 	$(document).ready(function(){
 
