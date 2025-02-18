@@ -766,6 +766,14 @@ h2.breif-txt {
     gap: 1.25vw;
 }
 
+.other-things {
+    padding: 0 var(--horizontal) 5vw;
+}
+
+.other-things h3 {
+    text-align: center;
+}
+
 /* ================
     PROJECT MAIN PAGE
 =================== */
