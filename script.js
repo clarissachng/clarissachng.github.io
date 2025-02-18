@@ -122,4 +122,31 @@ jQuery(function($){
 	$(function(){
 		$('[data-scroll-speed]').moveIt();
 	});	
+	$(document).ready(function () {
+		if ($(".cursor").length === 0) { // Prevent multiple cursors
+			var $cursor = $("<div class='cursor'></div>").appendTo("body");
+			
+			$(document).on("mousemove", function (e) {
+				$cursor.css({
+					top: e.pageY + "px",
+					left: e.pageX + "px"
+				});
+			});
+	
+			$(document).on("click", function () {
+				$cursor.addClass("expand");
+				setTimeout(() => {
+					$cursor.removeClass("expand");
+				}, 500);
+			});
+	
+			$("a, button, input, .clickable").on("mouseenter", function () {
+				$cursor.addClass("cursor-pointer");
+			}).on("mouseleave", function () {
+				$cursor.removeClass("cursor-pointer");
+			});
+		}
+	});
+	
+		
 })

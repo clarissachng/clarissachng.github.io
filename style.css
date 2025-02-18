@@ -28,13 +28,34 @@
 
 body {
     font-family: ivypresto-display, serif;
-    /* font-family: laca, sans-serif; */
     font-style: normal;
-    /* font-weight: 400; */
-    /* font-family: "Montserrat", sans-serif; */
     color: var(--black);
     background-color: var(--bg);
+    height: 100vh;
+    cursor: url("./assets/cursor.png") 30 37, default; /* Hide default cursor */
 }
+
+/* Custom Cursor */
+.cursor {
+    width: auto;
+    height: 60px;
+    background: url("./assets/cursor.png") no-repeat center center;
+    background-size: contain;
+    position: fixed; /* Fix position */
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 9999; /* Make sure it's above everything */
+}
+/* 
+.cursor.expand {
+    transform: scale(1.5);
+    opacity: 0.7;
+}
+
+.cursor-pointer {
+    background: url("/assets/pointer.png") no-repeat center center;
+    background-size: contain;
+} */
 
 h1 {
     /* Desktop/H1 */
@@ -1090,7 +1111,7 @@ img.right-mock {
 }
 .footer p, .footer a {
     font-family: laca, sans-serif !important;
-    font-size: 0.75vw !important;
+    font-size: 1vw !important;
     font-weight: 500 !important;
 }
 @media screen and (max-width: 600px) {
