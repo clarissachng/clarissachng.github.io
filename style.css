@@ -18,6 +18,7 @@
     padding: 0;
 	box-sizing: border-box; 
     scroll-behavior: smooth;    
+    cursor: url("./assets/cursor.png") 32 40, default;
     
 }
 
@@ -261,6 +262,7 @@ button.dropbtn {
     font-size: 1.275vw !important;
     color: var(--black) !important;
     padding-bottom: 0;
+    cursor: url("./assets/cursor.png") 30 37, default;
 }
 
 .dropdown {
