@@ -211,3 +211,124 @@ img {
 *:focus {
     z-index: 5;
 }
+
+@media screen and (max-width: 768px) {
+    .photo-album {
+        height: 260vw;
+        width: 95% !important;
+        margin-top: 8vw;
+    }
+    .polaroid {
+        width: 140px;
+        height: 220px;
+        padding: 19.5px 10px;
+        font-size: 0.6em;
+    }
+    .polaroid img {
+        height: 161px;
+        margin-bottom: 11px;
+    }
+    .photo-album .medium {
+        width: 210px;
+        padding: 19px 9px 4px;
+        font-size: 0.8em;
+    }
+    
+    .photo-album .large img {
+        width: 100%;
+        height: 260px;
+        margin-bottom: 18px;
+    }
+    
+    .large.polaroid {
+        width: 220px;
+        height: 340px;
+    }
+    
+    .large img {
+        height: 260px;
+    }
+    
+    .medium.polaroid {
+        width: 140px;
+        height: 220px;
+    }
+    .photo-album .medium img {
+        width: 100%;
+        height: 162px;
+    }
+    
+    .small.polaroid {
+        width: 100px;
+        height: 160px;
+    }
+    .photo-album .small {
+        width: 100px;
+        padding: 14.5px 6.5px 0;
+        font-size: 0.6em;
+    }
+    .small img {
+        height: 115px !important;
+    }
+
+    .photo-album .img1 {
+        top: 32%;
+        right: 51%;
+    }
+    .photo-album .img2 {
+        top: 20%;
+        right: 55%;
+    }
+
+    .photo-album .img3 {
+        left: 13%;
+        top: 21%;
+    }
+
+    .photo-album .img4 {
+        top: 65%;
+        left: 30%;
+    }
+    .photo-album .img5 {
+        top: 38%;
+        right: 75%;
+    }   
+
+    .photo-album .img6 {
+        bottom: 17%;
+        right: 67%;
+    }
+    .photo-album .img9 {
+        bottom: 20%;
+        left: 0%;
+    }
+    .photo-album .img7 {
+        bottom: 0%;
+        left: -1%;
+        
+        margin: -1px;
+    }
+    .photo-album .img8 {
+        bottom: 0%;
+        left: 18%;
+    }
+    .photo-album .img11 {
+        left: 0%;
+        top: 18%;
+    }
+    .photo-album .img12 {
+        top: 2%;
+        left: 34%;
+    }
+    .photo-album .img13 {
+        top: 35%;
+        left: 0%;
+    }
+    .photo-album .img14 {
+        top: 85%;
+        left: 29%;
+    }
+    .photo-album .img15 {
+        left: 135px;
+    }
+}

@@ -19,7 +19,11 @@
 	box-sizing: border-box; 
     scroll-behavior: smooth;    
     cursor: url("./assets/cursor.png") 32 40, default;
-    
+}
+
+/* Update cursor styles for clickable elements */
+a, button, input, iframe, .clickable {
+    cursor: url("./assets/pointer-new.png") 20 25, pointer !important;
 }
 
 *::before,
@@ -33,30 +37,8 @@ body {
     color: var(--black);
     background-color: var(--bg);
     height: 100%;
-    cursor: url("./assets/cursor.png") 30 37, default; /* Hide default cursor */
+    /* cursor: url("./assets/cursor.png") 30 37, default; Hide default cursor */
 }
-
-/* Custom Cursor */
-.cursor {
-    width: auto;
-    height: 60px;
-    background: url("./assets/cursor.png") no-repeat center center;
-    background-size: contain;
-    position: fixed; /* Fix position */
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    z-index: 9999; /* Make sure it's above everything */
-}
-/* 
-.cursor.expand {
-    transform: scale(1.5);
-    opacity: 0.7;
-}
-
-.cursor-pointer {
-    background: url("/assets/pointer.png") no-repeat center center;
-    background-size: contain;
-} */
 
 h1 {
     /* Desktop/H1 */
