@@ -789,7 +789,7 @@ h2.breif-txt {
 .short-project-wrapper {
     padding: 5vw var(--horizontal);
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2vw; /* Add a 2vw gap between the two boxes */
 }
 .small.project-container {
@@ -801,6 +801,17 @@ h2.breif-txt {
     border-radius: 0.75vw;
     flex-direction: column;
     margin: 0;
+}
+
+img.short-proj {
+    width: 100%;
+    margin: 0 auto 2vw;
+    display: block;
+}
+
+.small.project-container:hover img.short-proj {
+    filter: drop-shadow( 5px 5px 15px rgba(244, 162, 153, 0.5));
+    transition: 0.3s ease-in-out;
 }
 
 .small.project-container:hover {
