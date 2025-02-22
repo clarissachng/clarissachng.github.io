@@ -22,7 +22,7 @@
 }
 
 /* Update cursor styles for clickable elements */
-a, button, input, iframe, .clickable {
+a, button, input, iframe, .project-container * {
     cursor: url("./assets/pointer-new.png") 20 25, pointer !important;
 }
 
