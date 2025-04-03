@@ -1219,25 +1219,25 @@ img.right-mock {
     }
 
     .breif .shape1 {
-        left: -5%;
+        left: -15%;
         top: 12%;
         height: 23vw;
     }
 
     .breif .shape2 {
-        left: 32%;
+        left: 22%;
         top: 11%;
         height: 12vw;
     }
 
     .breif .shape3 {
-        left: 42%;
+        left: 40%;
         top: 18%;
-        height: 21vw;   
+        height: 21vw;
     }
 
     .breif .shape4 {
-        left: 50%;
+        left: 47%;
         top: 9%;
         height: 23vw;
     }
@@ -1249,10 +1249,9 @@ img.right-mock {
     }
 
     .breif .shape6 {
-        right: -8%;
-        top: 20%;
-        height: 28vw;
-        animation-delay: 500ms;
+        right: -17%;
+        top: 19%;
+        height: 19vw;
     }
 
     .skills {
