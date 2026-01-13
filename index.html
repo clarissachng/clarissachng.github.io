@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="/styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script src="/script.js"></script>
+    <script src="./dist/script.js" type="module"></script>
     
 
     <title>clarissa.</title>
@@ -18,9 +17,9 @@
     <!-- PLace top menu -->
     <div id="nav-placeholder"></div>
     <script>
-    $(function(){
-      $("#nav-placeholder").load("nav.html");
-    });
+    fetch('/components/nav.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('nav-placeholder').innerHTML = data);
     </script>
 
     <!-- big header -->
@@ -118,7 +117,7 @@
         </div>
 
         <div class="projects-wrapper">
-            <a href="./website.html">
+            <a href="/pages/projects/website.html">
                 <div class="project-container element-fade-up">
                     <div class="project-txt">
                         <div class="project-title">
@@ -132,7 +131,7 @@
                     </div>
     
                     <div class="project-img">
-                        <img src="assets/website-mock.png" alt="">
+                        <img src="/assets/website-mock.png" alt="">
                     </div>
     
                 </div>
@@ -154,7 +153,7 @@
                     </div>
     
                     <div class="project-img">
-                        <img src="assets/drugwise.png" alt="">
+                        <img src="/assets/drugwise.png" alt="">
                     </div>
     
                 </div>
@@ -175,7 +174,7 @@
                     </div>
     
                     <div class="project-img">
-                        <img src="assets/TWF.png">
+                        <img src="/assets/TWF.png">
                     </div>
     
                 </div>
@@ -194,7 +193,7 @@
                 <span class="circle" aria-hidden="true">
                     <span class="icon arrow"></span>
                 </span>
-                <span class="button-text"><a href="./projects.html">More Projects</a></span>
+                <span class="button-text"><a href="/pages/projects.html">More Projects</a></span>
                 </button>
             </div>
             <div id="container">
@@ -202,7 +201,7 @@
                 <span class="circle" aria-hidden="true">
                     <span class="icon arrow"></span>
                 </span>
-                <span class="button-text"><a href="./courseworks.html">School Stuff</a></span>
+                <span class="button-text"><a href="/pages/courseworks.html">School Stuff</a></span>
                 </button>
             </div>
         </div>
@@ -211,9 +210,9 @@
     
     <div id="footer"></div>
     <script>
-    $(function(){
-      $("#footer").load("footer.html");
-    });
+    fetch('/components/footer.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('footer').innerHTML = data);
     </script>
 
 </body>

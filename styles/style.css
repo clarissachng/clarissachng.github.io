@@ -18,12 +18,12 @@
     padding: 0;
 	box-sizing: border-box; 
     scroll-behavior: smooth;    
-    cursor: url("./assets/cursor.png") 32 40, default;
+    cursor: url("/assets/cursor.png") 32 40, default;
 }
 
 /* Update cursor styles for clickable elements */
 a, button, input, iframe, .project-container * {
-    cursor: url("./assets/pointer-new.png") 20 25, pointer !important;
+    cursor: url("/assets/pointer-new.png") 20 25, pointer !important;
 }
 
 *::before,
@@ -244,7 +244,7 @@ button.dropbtn {
     font-size: 1.275vw !important;
     color: var(--black) !important;
     padding-bottom: 0;
-    cursor: url("./assets/cursor.png") 30 37, default;
+    cursor: url("/assets/cursor.png") 30 37, default;
 }
 
 .dropdown {

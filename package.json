@@ -1,0 +1,25 @@
+{
+  "name": "clarissachng.github.io",
+  "version": "1.0.0",
+  "description": "<h2 align=\"center\">   Portfolio Website - V2.0<br/>   <a href=\"https://clarissachng.github.io/\" target=\"_blank\">clarissachng.github.io</a> </h2> <div align=\"center\">   <img src=\"/assets/personalweb.png\" /> </div>",
+  "main": "dist/script.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clarissachng/clarissachng.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clarissachng/clarissachng.github.io/issues"
+  },
+  "homepage": "https://github.com/clarissachng/clarissachng.github.io#readme",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}

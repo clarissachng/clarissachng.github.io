@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="/styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script src="/script.js"></script>
+    <script src="/dist/script.js" type="module"></script>
 
     <title>clarissa.</title>
     <link rel="icon" href="/assets/tab-logo.png">
@@ -17,9 +16,9 @@
 <body>
     <div id="nav-placeholder"></div>
     <script>
-    $(function(){
-      $("#nav-placeholder").load("nav.html");
-    });
+    fetch('/components/nav.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('nav-placeholder').innerHTML = data);
     </script>
 
 
@@ -231,9 +230,9 @@
         
         <div id="photo" class="element-fade-up"></div>
         <script>
-        $(function(){
-        $("#photo").load("photo.html");
-        });
+        fetch('/components/photo.html')
+          .then(response => response.text())
+          .then(data => document.getElementById('photo').innerHTML = data);
         </script>
     </div>
 
@@ -241,9 +240,9 @@
 
     <div id="footer"></div>
     <script>
-    $(function(){
-      $("#footer").load("footer.html");
-    });
+    fetch('/components/footer.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('footer').innerHTML = data);
     </script>
    
 </body>

@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="/styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script src="/script.js"></script>
+    <script src="/dist/script.js" type="module"></script>
 
 
     <title>clarissa.</title>
@@ -17,9 +16,9 @@
 <body>
     <div id="nav-placeholder"></div>
     <script>
-    $(function(){
-      $("#nav-placeholder").load("nav.html");
-    });
+    fetch('/components/nav.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('nav-placeholder').innerHTML = data);
     </script>
 
     <div class="breif ">
@@ -49,7 +48,7 @@
     <div class="featured" id="featured-projects">
 
         <div class="projects-wrapper">
-            <a href="./website.html">
+            <a href="/pages/projects/website.html">
                 <div class="project-container element-fade-up">
                     <div class="project-txt">
                         <div class="project-title">
@@ -63,7 +62,7 @@
                     </div>
     
                     <div class="project-img">
-                        <img src="assets/website-mock.png" alt="">
+                        <img src="/assets/website-mock.png" alt="">
                     </div>
     
                 </div>
@@ -84,7 +83,7 @@
                     </div>
     
                     <div class="project-img">
-                        <img src="assets/drugwise.png" alt="">
+                        <img src="/assets/drugwise.png" alt="">
                     </div>
     
                 </div>
@@ -105,7 +104,7 @@
                     </div>
     
                     <div class="project-img">
-                        <img src="assets/TWF.png">
+                        <img src="/assets/TWF.png">
                     </div>
     
                 </div>
@@ -132,7 +131,7 @@
         <div class="short-project-wrapper">
 
             <a href="https://www.catalyst.edu.my/" class="small project-container element-fade-up" target="_blank">
-                <img class="short-proj" src="./assets/catalyst.png" alt="">
+                <img class="short-proj" src="/assets/catalyst.png" alt="">
                 <h4>Catalyst Education</h4>
                 <p>Web Development Intern @ Bikebear</p>
                 <h5 style="margin-top: 0.5vw;"><i>Wordpress website using HTML, CSS, Javascript</i></h5>
@@ -140,39 +139,39 @@
 
 
             <a href="https://github.com/fw22912/ai_powered_trash_classifier" class="small project-container element-fade-up" target="_blank">
-                <img class="short-proj" src="./assets/short-proj/ai-classifier.png" alt="">
+                <img class="short-proj" src="/assets/short-proj/ai-classifier.png" alt="">
                 <h4>AI Powered Trash Classifier</h4>
                 <p>BrisHack 2025</p>
                 <h5 style="margin-top: 0.5vw;"><i>Mobile app using Flutter, Python</i></h5>
             </a>
 
             <a href="https://github.com/clarissachng/valentine-tictactoe.git" class="small project-container element-fade-up" target="_blank">
-                <img class="short-proj" src="./assets/short-proj/tictactoe.png" alt="">
+                <img class="short-proj" src="/assets/short-proj/tictactoe.png" alt="">
                 <h4>Valentine Tic Tac Toe</h4>
                 <p>Recreating a TikTok game</p>
                 <h5 style="margin-top: 0.5vw;"><i>Desktop app using Electron.js, HTML, CSS</i></h5>
             </a>
             
             <a href="https://github.com/rjimin/GameJam2024" class="small project-container element-fade-up" target="_blank">
-                <img class="short-proj" src="./assets/short-proj/gm24.png" alt="">
+                <img class="short-proj" src="/assets/short-proj/gm24.png" alt="">
                 <h4>Haunted Escape</h4>
                 <p>GameJam 2024 (Best Visuals Award)</p>
                 <h5 style="margin-top: 0.5vw;"><i>Desktop game using Unity, C#</i></h5>
             </a>
             <a href="https://github.com/fw22912/EncodeAIHack" class="small project-container element-fade-up" target="_blank">
-                <img class="short-proj" src="./assets/short-proj/therago.png" alt="">
+                <img class="short-proj" src="/assets/short-proj/therago.png" alt="">
                 <h4>TheraGo (Further developed on Mood Tracker WebApp)</h4>
                 <p>Encode Hackathon 2023</p>
                 <h5 style="margin-top: 0.5vw;"><i>Webapp using HTML, CSS, Javascript, Python</i></h5>
             </a>
             <a href="https://github.com/rjimin/BrisHack" class="small project-container element-fade-up" target="_blank">
-                <img class="short-proj" src="./assets/short-proj/brshack23.png" alt="">
+                <img class="short-proj" src="/assets/short-proj/brshack23.png" alt="">
                 <h4>Mood Tracker WebApp</h4>
                 <p>BrisHack 2023</p>
                 <h5 style="margin-top: 0.5vw;"><i>Webapp using HTML, CSS, Javascript, Python</i></h5>
             </a>
             <a href="https://github.com/rjimin/GameJam2023" class="small project-container element-fade-up" target="_blank">
-                <img class="short-proj" src="./assets/short-proj/gm23.png" alt="">
+                <img class="short-proj" src="/assets/short-proj/gm23.png" alt="">
                 <h4>Contaminated World</h4>
                 <p>GameJam 2023</p>
                 <h5 style="margin-top: 0.5vw;"><i>Desktop game using Unity, C#</i></h5>
@@ -186,9 +185,9 @@
 
     <div id="footer"></div>
     <script>
-    $(function(){
-      $("#footer").load("footer.html");
-    });
+    fetch('/components/footer.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('footer').innerHTML = data);
     </script>
    
 </body>
