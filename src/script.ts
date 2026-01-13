@@ -71,6 +71,9 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Listen to scroll
     window.addEventListener('scroll', maskinleftload);
+    
+    // Trigger on page load for elements already in view
+    maskinleftload();
 
 
     // --- GIF Name Animation ---

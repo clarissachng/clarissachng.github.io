@@ -205,7 +205,7 @@ button {
 
 .element-fade-up {
     transform: translateY(40px);
-    opacity: 1; /* Temporarily set to 1 to test */
+    opacity: 0;
     transition: 0.8s;
 }
 .element-fade-up.triggered {
