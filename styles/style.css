@@ -8,7 +8,7 @@
     --turquoise: #A8E6E2;
     --purple: #d0bbee;
     --black: #0B3F51;
-    --bg: #white;
+    --bg: white;
     --dark-btn-bg:#e6e9ef; 
 }
 
@@ -205,7 +205,7 @@ button {
 
 .element-fade-up {
     transform: translateY(40px);
-    opacity: 0;
+    opacity: 1; /* Temporarily set to 1 to test */
     transition: 0.8s;
 }
 .element-fade-up.triggered {

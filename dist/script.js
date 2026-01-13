@@ -76,11 +76,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     // --- Change Image Animation ---
     const imgList = [
-        "/assets/shapes/3.png",
-        "/assets/shapes/5.png",
-        "/assets/shapes/4.png",
-        "/assets/shapes/7.png",
-        "/assets/shapes/8.png"
+        "../assets/shapes/3.png",
+        "../assets/shapes/5.png",
+        "../assets/shapes/4.png",
+        "../assets/shapes/7.png",
+        "../assets/shapes/8.png"
     ];
     function preloadImages(list) {
         list.forEach((imgSrc) => {
