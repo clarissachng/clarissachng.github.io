@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <script src="/dist/script.js" type="module"></script>
+
+    <title>clarissa.</title>
+    <link rel="icon" href="/assets/tab-logo.png">
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+    <script>
+    fetch('/components/nav.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('nav-placeholder').innerHTML = data);
+    </script>
+
+    <div class="project-header dw element-fade-up">
+        <div class="project-logo dw">
+            <img src="/assets/projects/drugwise/drugwise-logo.png">
+        </div>
+
+        <div class="project-mock">
+            <img src="/assets/projects/drugwise/laptop-mock.png" class="main-mock dw" data-scroll-speed="6">
+            <img src="/assets/projects/drugwise/tablet-mock.png" class="left-mock dw" data-scroll-speed="4">
+            <img src="/assets/projects/drugwise/phone-mock.png" class="right-mock dw" data-scroll-speed="2">
+        </div>
+        
+    </div>
+
+
+    <div class="project-overview dw">
+        <h5 class="element-fade-up">project overview</h5>
+        <div class="overview-top element-fade-up">
+            <div class="overview-left">
+                <h2>DrugWise</h2>
+            </div>
+            <div class="overview-right">
+                <p>
+                    This project was done for the APUC Challenge, hosted by the University of Bristol, we were prompted to create a solution/ prototype for the given theme. 
+                    <br><a style="font-style: italic; text-decoration: underline;" href="https://apuc.blogs.bristol.ac.uk/challenges/know-your-battery/" target="_blank">Learn more about the competition</a>
+                </p>
+            </div>
+
+        </div>
+        <div class="overview-bottom element-fade-up">
+            <div class="time">
+                <h5>Timeline</h5>
+                <p>Summer 2025; Jun - Aug 2025</p>
+            </div>
+
+            <div class="technologies">
+                <h5>technologies</h5>
+                <p>React, React Native, TypeScript, and Firebase</p>
+            </div>
+
+            <div class="tools">
+                <h5>Team</h5>
+                <p>1 Project Manager (me!) <br>2 Developers (me!) <br>1 Designer <br> 2 Medication/Science Advisors</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-section dw">
+        <div class="project-explain element-fade-up">
+            <h5>Narrowing down a problem</h5>
+            <h4>During our research/ brainstorming phase, we identified key challenges in medication safety that needed addressing. Based on our user research about 50% of the elderly (aged 40 and above) are not aware of the existence of harmful drug or diet interactions. Patients can struggle to identify pills correctly, especially when packaging is lost, raising risks of misuse and counterfeit consumption.</h4>
+        </div>
+
+        <div class="project-explain element-fade-up">
+            <h5>our core need</h5>
+            <h4>How can we make the public to be more aware of medication safety?</h4>
+            <!-- <div class="solution"> -->
+                <!-- <img src="/assets/projects/drugwise/project-mock.png"> -->
+                
+            <!-- </div> -->
+            
+        </div>
+    </div>
+
+    <div class="section-title dw">
+        <h4 class="element-fade-up">Starting the Process</h4>
+        <h2 class="element-fade-up">Understanding Pains and Needs 🔍</h2>
+    </div>
+
+    <div class="project-section2 element-fade-up">
+        <h5>I identify what are the good and pain points of the old website by</h5>
+        <h3>Conducting a comprehensive UX audit<br><br></h3>
+
+        <p>The main pain points were the lack of contents and design choices made does not reflect on the personal brand that I've envisioned.<br> <br> 
+        As I try to go through the current webpage, I noted that the design choices made are leaning towards minimalistic and straightforward to allow the people to digest information easily. With that in mind, I looked into the areas of improvement with the existing flow that I could potentially build upon.</p>
+    </div>
+
+    <div class="project-section3 dw">
+        <h5 class="element-fade-up">Here are some of the areas of improvment as identified in the audit:</h5>
+
+        <div class="project-audit element-fade-up">
+            <div class="image">
+                <img src="/assets/projects/clarissa/old-homepage.png">
+            </div>
+
+            <div class="img-caption">
+                <i>Current view experience (Landing page)</i>
+            </div>
+
+            <div class="audit-explanation">
+                <h4>Homepage</h4>
+                <ul>
+                    <li><p>The homepage is the first thing that the user sees when they visit the website. It should be engaging and visually appealing to capture the user's attention.</p></li>
+                    <li><p> The current homepage is too plain and lacks visual interest.</p></li>
+                    <li><p> There's too many font combination (Inconsistent, and might look a bit messy from the viewer prespective).</p></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project-audit element-fade-up">
+            <div class="image">
+                <img src="/assets/projects/clarissa/old-about.png">
+            </div>
+
+            <div class="img-caption">
+                <i>Current view experience (2nd Section)</i>
+            </div>
+
+            <div class="audit-explanation">
+                <h4>About & Experience Section</h4>
+                <ul>
+                    <li><p>The content shown is too wordy and looks messy.</p></li>
+                    <li><p>Experince section does not showcase what I've done and it's too simplified (e.g, no projects examples).</p></li>
+                    <li><p>Extra (fun facts) section can be shown in a more interesting way.</p></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project-audit element-fade-up">
+            <div class="image">
+                <img src="/assets/projects/clarissa/old-skills.png">
+            </div>
+
+            <div class="img-caption">
+                <i>Current view experience (3rd Section)</i>
+            </div>
+
+            <div class="audit-explanation">
+                <h4>Skills Section</h4>
+                <ul>
+                    <li><p>The content shown is not properly arranged.</p></li>
+                    <li><p>Skill level might not be necessary.</p></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project-audit element-fade-up">
+            <div class="image">
+                <img src="/assets/projects/clarissa/old-cta.png">
+            </div>
+
+            <div class="img-caption">
+                <i>Current view experience (Footer Section)</i>
+            </div>
+
+            <div class="audit-explanation">
+                <h4>CTA & Footer Section</h4>
+                <ul>
+                    <li><p>Too many font combination in a section which could be presented as messy.</p></li>
+                    <li><p>The arrangement of the content can be improved.</p></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="section-title dw">
+        <h4 class="element-fade-up">DEVELOP</h4>
+        <h2 class="element-fade-up">Brainstorming & Iterations 🧠</h2>
+    </div>
+
+    <div class="project-section4 dw element-fade-up">
+        <h5>I started to build out the whole webflow by</h5>
+        <h3>Brainstorming and iterating different ways we can concisely display preview content<br><br></h3>
+
+        <p>I wanted to explore alternatives to improve content structure and layout. I started by sketching out different ideas and wireframes to visualize the new website layout. <br><br>Here are the points that I've decided on to create a more engaging and visually appealing design. <br><br></p>
+
+        <ul>
+            <li><p>Clean and minimal themed webpage.</p></li>
+            <li><p>Placing information in Bento Box design.</p></li>
+            <li><p>Pastle rainbow with minimalistic design elements, doodles, and shapes.</p></li>
+
+        </ul>
+
+        <div class="wireframes">
+            <div class="wireframe-container element-fade-up">
+                <div class="desc">
+                    <h5>homepage</h5>
+                    <h4>Two main sections: Breif Intro & Featured</h4>
+                    <p>I have broke down huge chunks of information from the previous about section into two pages (One part is in homepage, and another is in the about page).</p>
+                    <p>I've added a new section to feature my projects to showcase my skills. </p>
+                </div>
+                <div class="img">
+                    <img src="/assets/projects/clarissa/homepage-layout.jpeg">
+                    <img src="/assets/projects/clarissa/project-layout.jpeg">
+                </div>
+            </div>
+
+            <div class="wireframe-container element-fade-up">
+                <div class="desc">
+                    <h5>CTA & Footer</h5>
+                    <h4>Straightforward CTA with Useful Links</h4>
+                    <p>Improved from the previous design to provide better clarity to guide the users on ways to contact (Work together/ Contact Section) and navigate through the webiste (Footer).</p>
+                </div>
+                <div class="img">
+                    <img src="/assets/projects/clarissa/cta-footer-layout.jpeg">
+                </div>
+            </div>
+
+            <div class="wireframe-container element-fade-up">
+                <div class="desc">
+                    <h5>About page</h5>
+                    <h4>Bento box design to group information</h4>
+                    <p>Improved design from the previous skills section to grouped sections in the form of bento box design.</p>
+                    <p>The top section includes a picture and paragraph of myself and some of my social links.</p>
+                </div>
+                <div class="img aboutpage">
+                    <img src="/assets/projects/clarissa/about-layout.jpeg">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section-title dw">
+        <h4 class="element-fade-up">DELIVER</h4>
+        <h2 class="element-fade-up">Final Outcome/ Product ✨</h2>
+    </div>
+
+    <div class="project-section5">
+        
+        <div class="final-left element-fade-up">
+            <div class="final-txt">
+                <h4>🏠 Homepage Redesign</h4>
+                <p>The redesign of the homepage includes the hand drawn logo, shapes and circluar animation. These designs intents to attract the attention of the user and keep the webpage interesting. </p>
+            </div>
+            <div class="final-img">
+                <img src="/assets/projects/clarissa/final1.png">
+            </div>
+        </div>
+
+        <div class="final-right element-fade-up">
+            <div class="final-img">
+                <img src="/assets/projects/clarissa/final2.png">
+            </div>
+            <div class="final-txt">
+                <h4>🧩 Featured Section</h4>
+                <p>The new section features the top 3 works that has been done. The <b>Learn More button</b> leads to the innerpages of each project, which explains the process of creating the pages. <br><br> 
+                The clickable image of each project leads to the project webpage (Opens in a new tab).</p>
+                
+            </div>
+        </div>
+
+        <div class="final-left element-fade-up">
+            <div class="final-txt">
+                <h4>☎️ CTA & Footer Redesign</h4>
+                <p>The redesign of the CTA is simplified and text is reduced from the previous design to make it easy for the user to read through and digest. The footer contains 3 parts: social links, navigation links and copyright.</p>
+            </div>
+            <div class="final-img">
+                <img src="/assets/projects/clarissa/final3.png">
+            </div>
+        </div>
+
+        <div class="final-right element-fade-up">
+            <div class="final-img">
+                <img src="/assets/projects/clarissa/final4.png">
+            </div>
+            <div class="final-txt">
+                <h4>💡 About Page Redesign</h4>
+                <p>The About page is split into 2 parts: breif introduction and skills & more section. The arrangement of the contents are arranged in bento box design (top section has 3 containers and bottom section has 4 containers). <br><br>This arrangement is designed to be effortlessly scannable and digest.</p>
+            </div>
+        </div>
+
+        <div id="container">
+            <button class="learn-more element-fade-up">
+            <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+            </span>
+            <span class="button-text"><a href="https://github.com/clarissachng/clarissachng.github.io" target="_blank">View GitHub</a></span>
+            </button>
+        </div>
+
+    </div>
+
+    <div class="view-more">
+        <h3>✮⋆˙ like what you see? <i>view more of my work</i> ⋆｡°✩</h3>
+
+        <div class="top-btn">
+            <div id="container">
+                <button class="learn-more">
+                <span class="circle" aria-hidden="true">
+                    <span class="icon arrow"></span>
+                </span>
+                <span class="button-text"><a href="/pages/projects.html">More Projects</a></span>
+                </button>
+            </div>
+            <div id="container">
+                <button class="learn-more">
+                <span class="circle" aria-hidden="true">
+                    <span class="icon arrow"></span>
+                </span>
+                <span class="button-text"><a href="/pages/courseworks.html">School Stuff</a></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+    <script>
+    fetch('/components/footer.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
+
+</body>
+</html>
