@@ -264,7 +264,6 @@ img.right-mock.dw {
 }
 
 .project-cta.dw {
-    padding: 0 50em;
     margin: 0 auto;
     display: flex;
 }
@@ -383,4 +382,14 @@ button.project-cta.dw:hover {
     border: 2px solid lightgrey;
     background-color: white;
     padding: 1em;
+}
+
+.project-section5.dw {
+    display: flex;
+    flex-direction: column;
+}
+
+.final-bottom {
+    display: flex;
+    margin-top: 5em;
 }

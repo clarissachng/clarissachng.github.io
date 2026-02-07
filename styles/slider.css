@@ -1,9 +1,9 @@
 .slider-container {
-  max-width: 60em;
-  position: relative;
-  margin: auto;
-  overflow: hidden;
-  border-radius: 8px;
+    max-width: 90em;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 20px;
 }
 
 .slide {
