@@ -126,20 +126,20 @@ button {
     font-size: inherit;
   }
 
-  button.learn-more {
-    width: 12rem;
+button.learn-more {
+    width: 101.25em; /* 67.5em * 1.5 */
     height: auto;
-  }
+}
 
   button.learn-more .circle {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: relative;
     display: block;
     margin: 0;
-    width: 3rem;
-    height: 3rem;
+    width: 6.75rem; /* 4.5rem * 1.5 */
+    height: 6.75rem; /* 4.5rem * 1.5 */
     background: var(--purple);
-    border-radius: 1.625rem;
+    border-radius: 3.65625rem; /* 2.4375rem * 1.5 */
   }
 
   button.learn-more .circle .icon {
@@ -153,21 +153,21 @@ button {
 
   button.learn-more .circle .icon.arrow {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    left: 0.625rem;
-    width: 1.125rem;
-    height: 0.125rem;
+    left: 1.40625rem; /* 0.9375rem * 1.5 */
+    width: 2.53125rem; /* 1.6875rem * 1.5 */
+    height: 0.28125rem; /* 0.1875rem * 1.5 */
     background: none;
   }
   
   button.learn-more .circle .icon.arrow::before {
     position: absolute;
     content: '';
-    top: -0.25rem;
-    right: 0.0625rem;
-    width: 0.625rem;
-    height: 0.625rem;
-    border-top: 0.125rem solid #fff;
-    border-right: 0.125rem solid #fff;
+    top: -0.5625rem; /* -0.375rem * 1.5 */
+    right: 0.140625rem; /* 0.09375rem * 1.5 */
+    width: 1.40625rem; /* 0.9375rem * 1.5 */
+    height: 1.40625rem; /* 0.9375rem * 1.5 */
+    border-top: 0.28125rem solid #fff; /* 0.1875rem * 1.5 */
+    border-right: 0.28125rem solid #fff; /* 0.1875rem * 1.5 */
     transform: rotate(45deg);
   }
 
@@ -178,9 +178,10 @@ button {
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 0.75rem 0;
-    margin: 0 0 0 1.85rem;
+    padding: 1.6875rem 0; /* 1.125rem * 1.5 */
+    margin: 0 0 0 4.1625rem; /* 2.775rem * 1.5 */
     font-weight: 500;
+    font-size: 2.25em; /* 1.5em * 1.5 */
     color: var(--purple) !important;
     line-height: 1.6;
     text-align: center;
@@ -600,7 +601,7 @@ p.intro-desc {
 }
 
 .view-more {
-    margin: 5vw auto;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -675,13 +676,9 @@ h2.breif-txt {
     PROJECT MAIN PAGE
 =================== */
 .short-project-section {
-    padding: 7vw var(--horizontal) 5vw;
+    padding: 0 var(--horizontal) 5vw;
     overflow: hidden !important;
     position: relative;
-}
-
-.short-project-section .subtitle {
-    padding-top: 7vw;
 }
 
 .short-project-wrapper {
@@ -723,11 +720,6 @@ img.short-proj {
 .small.project-container h4 {
     font-family: ivypresto-display, serif;
     font-size: 1.5vw;
-}
-.short-project-section {
-    padding: 7vw var(--horizontal) 5vw;
-    overflow: hidden !important;
-    position: relative;
 }
 
 /* ================
