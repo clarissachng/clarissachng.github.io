@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/styles/style.css">
+    <link rel="stylesheet" type="text/css" href="/styles/slider.css">
+    <link rel="stylesheet" type="text/css" href="/styles/project.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -43,7 +45,7 @@
             <div class="overview-right">
                 <p>
                     This project was done for the APUC Challenge, hosted by the University of Bristol, we were prompted to create a solution/ prototype for the given theme. 
-                    <br><a style="font-style: italic; text-decoration: underline;" href="https://apuc.blogs.bristol.ac.uk/challenges/know-your-battery/" target="_blank">Learn more about the competition</a>
+                    <br><a style="font-style: italic; text-decoration: underline;" href="https://aic-ug.bristol.ac.uk/" target="_blank">Learn more about the competition</a>
                 </p>
             </div>
 
@@ -68,170 +70,163 @@
 
     <div class="project-section dw">
         <div class="project-explain element-fade-up">
-            <h5>Narrowing down a problem</h5>
-            <h4>During our research/ brainstorming phase, we identified key challenges in medication safety that needed addressing. Based on our user research about 50% of the elderly (aged 40 and above) are not aware of the existence of harmful drug or diet interactions. Patients can struggle to identify pills correctly, especially when packaging is lost, raising risks of misuse and counterfeit consumption.</h4>
+            <h5>The Challenge</h5>
+            <h4>How can we harness emerging technologies—from AI-driven diagnostics to digital health applications—to transform global healthcare? We focused on a critical yet overlooked aspect: medication safety.</h4>
         </div>
 
         <div class="project-explain element-fade-up">
-            <h5>our core need</h5>
-            <h4>How can we make the public to be more aware of medication safety?</h4>
-            <!-- <div class="solution"> -->
-                <!-- <img src="/assets/projects/drugwise/project-mock.png"> -->
-                
-            <!-- </div> -->
-            
+            <h5>our approach</h5>
+            <h4>Leveraging AI and mobile technology to prevent medication errors, detect dangerous interactions, and ensure patient safety—addressing both efficacy and global equity.</h4>            
         </div>
     </div>
 
     <div class="section-title dw">
-        <h4 class="element-fade-up">Starting the Process</h4>
+        <h4 class="element-fade-up">STARTING THE PROCESS</h4>
         <h2 class="element-fade-up">Understanding Pains and Needs 🔍</h2>
     </div>
 
     <div class="project-section2 element-fade-up">
-        <h5>I identify what are the good and pain points of the old website by</h5>
-        <h3>Conducting a comprehensive UX audit<br><br></h3>
+        <h5>Research</h5>
+        <h4>We have conducted extensive research to understand the challenges and needs related to medication safety.</h4>
 
-        <p>The main pain points were the lack of contents and design choices made does not reflect on the personal brand that I've envisioned.<br> <br> 
-        As I try to go through the current webpage, I noted that the design choices made are leaning towards minimalistic and straightforward to allow the people to digest information easily. With that in mind, I looked into the areas of improvement with the existing flow that I could potentially build upon.</p>
+                
+        <div class="bento">
+            <div class="bento-grid">
+            
+            <div 
+                class="bento-item" style=" grid-column: span 1; grid-row: span 1;  display: flex; align-items: center; justify-content: center;"
+            >
+            <h3>1 in 10</h3>
+                <h5>medical products in low- and middle-income countries are substandard or falsified according to WHO.</h5>
+            </div>
+            
+            <div 
+                class="bento-item" style="grid-column: span 2; grid-row: span 1;  display: flex; align-items: center; justify-content: center;"
+            >
+                <h5>Medication errors cost an estimated</h5>
+                <h3>$42 billion USD annually</h3>
+
+            </div>
+            
+            <div 
+                class="bento-item" style="grid-column: span 2; grid-row: span 2;  display: flex; align-items: center; justify-content: center;"
+            >
+            <h5>Patients often struggle to</h5>
+                <h3>identify pills correctly</h3>
+                <h5>especially when packaging is lost, raising risks of misuse and counterfeit consumption.</h5>
+                
+            </div>
+            
+            <div 
+                class="bento-item" style="grid-column: span 1; grid-row: span 2;  display: flex; align-items: center; justify-content: center;"
+            >
+                <h3>50%</h3>
+                <h5>of people aged 40 and above are unaware of harmful drug or diet interactions.</h5>
+            </div>
+            
+            </div>
+        </div>
     </div>
 
     <div class="project-section3 dw">
-        <h5 class="element-fade-up">Here are some of the areas of improvment as identified in the audit:</h5>
+        <h5 class="element-fade-up">Our Solution</h5>
+        <h3 class="element-fade-up">DrugWise</h3>
+        <h4 class="element-fade-up" style="font-style: italic;">A comprehensive medication safety platform that empowers users to verify medications, check interactions, and make informed health decisions.</h4>
 
-        <div class="project-audit element-fade-up">
-            <div class="image">
-                <img src="/assets/projects/clarissa/old-homepage.png">
+        <div class="features-grid element-fade-up">
+            <div class="feature-card">
+                <h4>💊 Pill Identification</h4>
+                <p>AI-powered visual recognition to identify pills from photos, helping users verify medications even without packaging.</p>
             </div>
-
-            <div class="img-caption">
-                <i>Current view experience (Landing page)</i>
+            
+            <div class="feature-card">
+                <h4>⚠️ Interaction Checker</h4>
+                <p>Real-time analysis of drug-drug, drug-food, and drug-herb interactions to prevent harmful combinations.</p>
             </div>
-
-            <div class="audit-explanation">
-                <h4>Homepage</h4>
-                <ul>
-                    <li><p>The homepage is the first thing that the user sees when they visit the website. It should be engaging and visually appealing to capture the user's attention.</p></li>
-                    <li><p> The current homepage is too plain and lacks visual interest.</p></li>
-                    <li><p> There's too many font combination (Inconsistent, and might look a bit messy from the viewer prespective).</p></li>
-                </ul>
+            
+            <div class="feature-card">
+                <h4>📋 Medication Tracker</h4>
+                <p>Personal medication cabinet to manage prescriptions, set reminders, and track dosage schedules.</p>
             </div>
-        </div>
-
-        <div class="project-audit element-fade-up">
-            <div class="image">
-                <img src="/assets/projects/clarissa/old-about.png">
-            </div>
-
-            <div class="img-caption">
-                <i>Current view experience (2nd Section)</i>
-            </div>
-
-            <div class="audit-explanation">
-                <h4>About & Experience Section</h4>
-                <ul>
-                    <li><p>The content shown is too wordy and looks messy.</p></li>
-                    <li><p>Experince section does not showcase what I've done and it's too simplified (e.g, no projects examples).</p></li>
-                    <li><p>Extra (fun facts) section can be shown in a more interesting way.</p></li>
-                </ul>
+            
+            <div class="feature-card">
+                <h4>🔍 Safety Verification</h4>
+                <p>Check for counterfeit medications and verify product authenticity against official databases.</p>
             </div>
         </div>
-
-        <div class="project-audit element-fade-up">
-            <div class="image">
-                <img src="/assets/projects/clarissa/old-skills.png">
-            </div>
-
-            <div class="img-caption">
-                <i>Current view experience (3rd Section)</i>
-            </div>
-
-            <div class="audit-explanation">
-                <h4>Skills Section</h4>
-                <ul>
-                    <li><p>The content shown is not properly arranged.</p></li>
-                    <li><p>Skill level might not be necessary.</p></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="project-audit element-fade-up">
-            <div class="image">
-                <img src="/assets/projects/clarissa/old-cta.png">
-            </div>
-
-            <div class="img-caption">
-                <i>Current view experience (Footer Section)</i>
-            </div>
-
-            <div class="audit-explanation">
-                <h4>CTA & Footer Section</h4>
-                <ul>
-                    <li><p>Too many font combination in a section which could be presented as messy.</p></li>
-                    <li><p>The arrangement of the content can be improved.</p></li>
-                </ul>
-            </div>
-        </div>
-
     </div>
 
     <div class="section-title dw">
-        <h4 class="element-fade-up">DEVELOP</h4>
-        <h2 class="element-fade-up">Brainstorming & Iterations 🧠</h2>
+        <h4 class="element-fade-up">USER JOURNEY</h4>
+        <h2 class="element-fade-up">How Users Interact with DrugWise 👤</h2>
     </div>
 
-    <div class="project-section4 dw element-fade-up">
-        <h5>I started to build out the whole webflow by</h5>
-        <h3>Brainstorming and iterating different ways we can concisely display preview content<br><br></h3>
+    <div class="project-section2 dw">
+        <div class="user-flow element-fade-up">
+            <img src="/assets/projects/drugwise/dw-userflow.png" alt="User flow diagram for DrugWise">
+        </div>
 
-        <p>I wanted to explore alternatives to improve content structure and layout. I started by sketching out different ideas and wireframes to visualize the new website layout. <br><br>Here are the points that I've decided on to create a more engaging and visually appealing design. <br><br></p>
-
-        <ul>
-            <li><p>Clean and minimal themed webpage.</p></li>
-            <li><p>Placing information in Bento Box design.</p></li>
-            <li><p>Pastle rainbow with minimalistic design elements, doodles, and shapes.</p></li>
-
-        </ul>
-
-        <div class="wireframes">
-            <div class="wireframe-container element-fade-up">
-                <div class="desc">
-                    <h5>homepage</h5>
-                    <h4>Two main sections: Breif Intro & Featured</h4>
-                    <p>I have broke down huge chunks of information from the previous about section into two pages (One part is in homepage, and another is in the about page).</p>
-                    <p>I've added a new section to feature my projects to showcase my skills. </p>
-                </div>
-                <div class="img">
-                    <img src="/assets/projects/clarissa/homepage-layout.jpeg">
-                    <img src="/assets/projects/clarissa/project-layout.jpeg">
+        <div class="project-explain element-fade-up">
+            <h5>User Scenarios</h5>
+            <h4>Real-world use cases that DrugWise addresses</h4>
+        </div>
+            
+        <div class="scenario-grid element-fade-up">
+            <div class="scenario-card">
+                <div class="scenario-icon">🧓</div>
+                <div class="scenario-content">
+                    <h4>Managing Multiple Prescriptions</h4>
+                    <h5 class="scenario-label">Elderly Patient</h5>
+                    <p>An older adult managing multiple prescriptions can quickly verify if a new medication will interact with their current regimen before their next doctor's visit.</p>
                 </div>
             </div>
-
-            <div class="wireframe-container element-fade-up">
-                <div class="desc">
-                    <h5>CTA & Footer</h5>
-                    <h4>Straightforward CTA with Useful Links</h4>
-                    <p>Improved from the previous design to provide better clarity to guide the users on ways to contact (Work together/ Contact Section) and navigate through the webiste (Footer).</p>
-                </div>
-                <div class="img">
-                    <img src="/assets/projects/clarissa/cta-footer-layout.jpeg">
+            
+            <div class="scenario-card">
+                <div class="scenario-icon">🏠</div>
+                <div class="scenario-content">
+                    <h4>Identifying Unknown Pills</h4>
+                    <h5 class="scenario-label">Family Caregiver</h5>
+                    <p>A caregiver finds unmarked pills in their parent's home and uses DrugWise to identify them instantly, ensuring medication safety.</p>
                 </div>
             </div>
-
-            <div class="wireframe-container element-fade-up">
-                <div class="desc">
-                    <h5>About page</h5>
-                    <h4>Bento box design to group information</h4>
-                    <p>Improved design from the previous skills section to grouped sections in the form of bento box design.</p>
-                    <p>The top section includes a picture and paragraph of myself and some of my social links.</p>
-                </div>
-                <div class="img aboutpage">
-                    <img src="/assets/projects/clarissa/about-layout.jpeg">
+            
+            <div class="scenario-card">
+                <div class="scenario-icon">✈️</div>
+                <div class="scenario-content">
+                    <h4>Verifying Authenticity Abroad</h4>
+                    <h5 class="scenario-label">International Traveler</h5>
+                    <p>Someone purchasing medication abroad can verify authenticity and check for counterfeit drugs before consumption.</p>
                 </div>
             </div>
-
         </div>
     </div>
+
+    <div class="section-title dw">
+        <h4 class="element-fade-up">THE SYSTEM</h4>
+        <h2 class="element-fade-up">How DrugWise Works ⚙️</h2>
+    </div>
+
+    <div class="project-system dw element-fade-up">
+        <div class="system-top">
+            <div class="system-item">
+            <h5>Architecture</h5>
+            <img src="/assets/projects/drugwise/dw-architecture.png" >
+        </div>
+
+        <div class="system-item element-fade-up">
+        <h5>How does the analysis feature work?</h5>
+        <img src="/assets/projects/drugwise/dw-analysis.png" alt="">
+    </div>
+        </div>
+        
+
+    <div class="project-explain element-fade-up">
+            <h5>Data Integration</h5>
+            <h4>The system leverages <b>DrugBank</b> for pharmaceutical data and the <b>DDID database</b> for complex herb/diet interaction analysis</h4>
+        </div>
+        
+    </div>
+</div>
 
     <div class="section-title dw">
         <h4 class="element-fade-up">DELIVER</h4>
@@ -239,55 +234,72 @@
     </div>
 
     <div class="project-section5">
-        
-        <div class="final-left element-fade-up">
-            <div class="final-txt">
-                <h4>🏠 Homepage Redesign</h4>
-                <p>The redesign of the homepage includes the hand drawn logo, shapes and circluar animation. These designs intents to attract the attention of the user and keep the webpage interesting. </p>
-            </div>
-            <div class="final-img">
-                <img src="/assets/projects/clarissa/final1.png">
-            </div>
-        </div>
 
-        <div class="final-right element-fade-up">
-            <div class="final-img">
-                <img src="/assets/projects/clarissa/final2.png">
-            </div>
+        <div class="element-fade-up final-right">
             <div class="final-txt">
-                <h4>🧩 Featured Section</h4>
-                <p>The new section features the top 3 works that has been done. The <b>Learn More button</b> leads to the innerpages of each project, which explains the process of creating the pages. <br><br> 
-                The clickable image of each project leads to the project webpage (Opens in a new tab).</p>
+                <h4>View our presentation here!</h4>
+                <p>To see more of the nitty gritty details of our solution (competitor analysis, journey maps, & all the features we wanted to include)</p>
+            </div>
+
+            <div class="slider-container">
+                <div class="slide">
+                    <img src="/assets/projects/drugwise/drugwise-presentation/01.jpg" alt="DrugWise Presentation Slide 1">
+                </div>
+                <div class="slide">
+                    <img src="/assets/projects/drugwise/drugwise-presentation/02.jpg" alt="DrugWise Presentation Slide 2">
+                </div>
+                <div class="slide">
+                    <img src="/assets/projects/drugwise/drugwise-presentation/03.jpg" alt="DrugWise Presentation Slide 3">
+                </div>
+                <div class="slide">
+                    <img src="/assets/projects/drugwise/drugwise-presentation/04.jpg" alt="DrugWise Presentation Slide 4">
+                </div>
+                <div class="slide">
+                    <img src="/assets/projects/drugwise/drugwise-presentation/05.jpg" alt="DrugWise Presentation Slide 5">
+                </div>
+                <div class="slide">
+                    <img src="/assets/projects/drugwise/drugwise-presentation/06.jpg" alt="DrugWise Presentation Slide 6">
+                </div>
+                <div class="slide">
+                    <img src="/assets/projects/drugwise/drugwise-presentation/07.jpg" alt="DrugWise Presentation Slide 7">
+                </div>
+                <div class="slide">
+                    <img src="/assets/projects/drugwise/drugwise-presentation/08.jpg" alt="DrugWise Presentation Slide 8">
+                </div>
+                <div class="slide">
+                    <img src="/assets/projects/drugwise/drugwise-presentation/09.jpg" alt="DrugWise Presentation Slide 9">
+                </div>
+                <div class="slide">
+                    <img src="/assets/projects/drugwise/drugwise-presentation/10.jpg" alt="DrugWise Presentation Slide 10">
+                </div>
+                <div class="slide">
+                    <img src="/assets/projects/drugwise/drugwise-presentation/11.jpg" alt="DrugWise Presentation Slide 11">
+                </div>
+                <div class="slide">
+                    <img src="/assets/projects/drugwise/drugwise-presentation/12.jpg" alt="DrugWise Presentation Slide 12">
+                </div>
+                <div class="slide">
+                    <img src="/assets/projects/drugwise/drugwise-presentation/13.jpg" alt="DrugWise Presentation Slide 13">
+                </div>
                 
+                <button class="prev" id="prevBtn">&#10094;</button>
+                <button class="next" id="nextBtn">&#10095;</button>
             </div>
+            
         </div>
+    </div>
 
-        <div class="final-left element-fade-up">
-            <div class="final-txt">
-                <h4>☎️ CTA & Footer Redesign</h4>
-                <p>The redesign of the CTA is simplified and text is reduced from the previous design to make it easy for the user to read through and digest. The footer contains 3 parts: social links, navigation links and copyright.</p>
-            </div>
-            <div class="final-img">
-                <img src="/assets/projects/clarissa/final3.png">
-            </div>
-        </div>
+    <div class="element-fade-up project-cta dw">
+            <button class="project-cta dw element-fade-up">
+                <a href="https://github.com/zt22740/apuc_new" target="_blank">VIEW GITHUB</a>            
+            </button>
 
-        <div class="final-right element-fade-up">
-            <div class="final-img">
-                <img src="/assets/projects/clarissa/final4.png">
-            </div>
-            <div class="final-txt">
-                <h4>💡 About Page Redesign</h4>
-                <p>The About page is split into 2 parts: breif introduction and skills & more section. The arrangement of the contents are arranged in bento box design (top section has 3 containers and bottom section has 4 containers). <br><br>This arrangement is designed to be effortlessly scannable and digest.</p>
-            </div>
-        </div>
+            <button class="project-cta dw element-fade-up">
+                <a href="https://apuc-comp.web.app/" target="_blank">VIEW WEBSITE</a>
+            </button>
 
-        <div id="container">
-            <button class="learn-more element-fade-up">
-            <span class="circle" aria-hidden="true">
-                <span class="icon arrow"></span>
-            </span>
-            <span class="button-text"><a href="https://github.com/clarissachng/clarissachng.github.io" target="_blank">View GitHub</a></span>
+            <button class="project-cta dw element-fade-up">
+                <a href="https://drive.google.com/file/d/1svtWZCL2vA88Iw7hUFLOFlKicNEvPcYC/view?usp=sharing" target="_blank">VIEW POSTER</a>
             </button>
         </div>
 

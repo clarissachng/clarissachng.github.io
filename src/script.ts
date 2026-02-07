@@ -150,6 +150,53 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    let currentIndex: number = 0;
+    const slides = document.querySelectorAll(".slide") as NodeListOf<HTMLElement>;
+
+    function showSlide(index: number, direction: 'left' | 'right' = 'left'): void {
+        // Wrap around logic
+        if (index >= slides.length) currentIndex = 0;
+        if (index < 0) currentIndex = slides.length - 1;
+
+        // Hide all slides and remove animation classes
+        slides.forEach(slide => {
+            slide.style.display = "none";
+            slide.classList.remove('slide-left', 'slide-right');
+        });
+
+        // Show the active slide with animation
+        const currentSlide = slides[currentIndex];
+        if (currentSlide) {
+            currentSlide.style.display = "block";
+            currentSlide.classList.add(direction === 'left' ? 'slide-left' : 'slide-right');
+        }
+    }
+
+    // Event Listeners for Buttons
+    document.getElementById("nextBtn")?.addEventListener("click", () => {
+        currentIndex++;
+        showSlide(currentIndex, 'left');
+    });
+
+    document.getElementById("prevBtn")?.addEventListener("click", () => {
+        currentIndex--;
+        showSlide(currentIndex, 'right');
+    });
+
+    // Keyboard navigation
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "ArrowLeft") {
+            currentIndex--;
+            showSlide(currentIndex, 'right');
+        } else if (e.key === "ArrowRight") {
+            currentIndex++;
+            showSlide(currentIndex, 'left');
+        }
+    });
+
+    // Initialize the first slide
+    showSlide(currentIndex);
+
     // Initialize MoveIt Logic
     const moveItInstances: MoveItItem[] = [];
     

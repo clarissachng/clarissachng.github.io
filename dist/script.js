@@ -1,6 +1,7 @@
 // No import statements needed anymore!
 // Equivalent to $(document).ready(...)
 document.addEventListener('DOMContentLoaded', () => {
+    var _a, _b;
     // --- Mobile Menu ---
     // We use <HTMLElement> generic to tell TS exactly what we expect
     const mobileMenu = document.getElementById("mobile-menu");
@@ -110,6 +111,48 @@ document.addEventListener('DOMContentLoaded', () => {
             this.el.style.transform = `translateY(${-scrollTop / this.speed}px)`;
         }
     }
+    let currentIndex = 0;
+    const slides = document.querySelectorAll(".slide");
+    function showSlide(index, direction = 'left') {
+        // Wrap around logic
+        if (index >= slides.length)
+            currentIndex = 0;
+        if (index < 0)
+            currentIndex = slides.length - 1;
+        // Hide all slides and remove animation classes
+        slides.forEach(slide => {
+            slide.style.display = "none";
+            slide.classList.remove('slide-left', 'slide-right');
+        });
+        // Show the active slide with animation
+        const currentSlide = slides[currentIndex];
+        if (currentSlide) {
+            currentSlide.style.display = "block";
+            currentSlide.classList.add(direction === 'left' ? 'slide-left' : 'slide-right');
+        }
+    }
+    // Event Listeners for Buttons
+    (_a = document.getElementById("nextBtn")) === null || _a === void 0 ? void 0 : _a.addEventListener("click", () => {
+        currentIndex++;
+        showSlide(currentIndex, 'left');
+    });
+    (_b = document.getElementById("prevBtn")) === null || _b === void 0 ? void 0 : _b.addEventListener("click", () => {
+        currentIndex--;
+        showSlide(currentIndex, 'right');
+    });
+    // Keyboard navigation
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "ArrowLeft") {
+            currentIndex--;
+            showSlide(currentIndex, 'right');
+        }
+        else if (e.key === "ArrowRight") {
+            currentIndex++;
+            showSlide(currentIndex, 'left');
+        }
+    });
+    // Initialize the first slide
+    showSlide(currentIndex);
     // Initialize MoveIt Logic
     const moveItInstances = [];
     // Query all elements with the attribute
