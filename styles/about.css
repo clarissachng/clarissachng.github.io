@@ -1,0 +1,106 @@
+  
+/* ================
+    ABOUT PAGE
+=================== */
+
+.about {
+    display: flex;
+    padding: 5vw var(--horizontal);
+    align-items: center;
+}
+
+.about-left, .about-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-left {
+    align-items: center;
+}
+
+.about-left img {
+    position: relative;
+    width: 65%;
+    border-radius: 30px;
+}
+
+.social {
+    margin-top: 0.5vw;
+    display: flex;
+    gap: 1vw;
+    
+}
+
+.social a {
+    border-bottom: 3px solid transparent;
+}
+
+.social a:hover {
+    border-bottom: 3px solid var(--purple);
+    transition: 0.3s ease-in-out;
+}
+
+.skills {
+    padding: 7vw var(--horizontal) 5vw;
+    display: flex;
+    overflow: hidden;
+}
+
+.skills .horizontal-scroll {
+    top: 0;
+}
+
+.skills-left, .skills-right {
+    width: 50%;
+}
+
+.skills-1, .skills-2, .skills-3 {
+    padding: 2vw;
+    border-radius: 20px;
+    margin: 2vw;
+}
+
+.skills-1 {
+    background-color: var(--blue);
+    opacity: 0.9;
+}
+
+.skills-2 {
+    background-color: var(--red);
+    opacity: 0.9;
+}
+
+.skills-3 {
+    background-color: var(--purple);
+    opacity: 0.9;
+}
+
+.song-charts {
+    padding: 0 2vw;
+}
+
+.song-charts iframe {
+    margin: 0.5vw 0;
+}
+
+.skills-desc {
+    margin-top: 1.5vw;
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 1vw;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    gap: 1.25vw;
+}
+
+.other-things {
+    padding: 0 var(--horizontal) 5vw;
+}
+
+.other-things h3 {
+    text-align: center;
+}
