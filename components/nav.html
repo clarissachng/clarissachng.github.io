@@ -1,36 +1,34 @@
-<!-- Navigation Bar -->
-<div class="topnav element-fade-up" id="top">
-    <div class="topnav-right">
+<!-- Sidebar Navigation -->
+<div class="sidebar" id="top">
+    <div class="sidebar-logo">
         <a href="/">
             <img src="/assets/logo.jpg" alt="logo">
         </a>
-    </div>
-
-    <!-- Regular Navigation -->
-    <div class="topnav-left" id="nav-links">
-        <a href="/pages/about.html">about</a>
-        <div class="dropdown">
-            <button class="dropbtn">featured</button>
-            <div class="dropdown-content">
-                <a href="/pages/projects.html">projects/ works</a>
-                <a href="/pages/courseworks.html">courseworks</a>
-                <a href="#" style="pointer-events: none;">X-tras *coming soon!</a>
-            </div>
+        <div class="sidebar-text">
+            <h5 style="margin-bottom: 2px;">clarissa + 思恩</h5>
+            <p style="font-size: 1.2em; line-height: 1.2;">cs @ uni of bristol ꕤ˚⊹</p>
         </div>
-        <a href="https://drive.google.com/file/d/15YG8h2zGnOvWzL-A2HMj54gce3YZtfDC/view?usp=sharing" target="_blank">resume</a>
-        <a href="https://drive.google.com/file/d/13wM4XPXzgTPqEsJSqjg9p_nK3XLDD1TZ/view?usp=drive_link" target="_blank">portfolio</a>
     </div>
 
-    <!-- Hamburger Menu Button -->
-    <button class="hamburger" id="hamburger-btn">&#9776;</button>
+    <nav class="sidebar-nav">
+        <div class="nav-pill-bg"></div>
+        <a href="/pages/about.html" class="nav-pill">about</a>
+        <a href="/pages/projects.html" class="nav-pill">projects</a>
+        <a href="/pages/courseworks.html" class="nav-pill">courseworks</a>
+        <a href="https://drive.google.com/file/d/13wM4XPXzgTPqEsJSqjg9p_nK3XLDD1TZ/view?usp=drive_link" target="_blank" class="nav-pill">portfolio</a>
+    </nav>
+
+    <!-- Hamburger Menu Button (Mobile) -->
+    <button class="hamburger" id="hamburger-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="hamburger-icon"></span>
+    </button>
 </div>
 
-<!-- Mobile Navigation Drawer -->
-<div class="mobile-nav" id="mobile-menu">
-    <a href="/pages/about.html">about</a>
-    <a href="/pages/projects.html">projects/ works</a>
-    <a href="/pages/courseworks.html">courseworks</a>
-    <a href="https://drive.google.com/file/d/15YG8h2zGnOvWzL-A2HMj54gce3YZtfDC/view?usp=sharing" target="_blank">resume</a>
-    <a href="https://drive.google.com/file/d/13wM4XPXzgTPqEsJSqjg9p_nK3XLDD1TZ/view?usp=drive_link" target="_blank">portfolio</a>
-    <button class="close-btn" id="close-btn">&times;</button>
-</div>
+<!-- Mobile Navigation Dropdown Panel -->
+<nav class="mobile-nav" id="mobile-menu" aria-label="Mobile navigation">
+    <a href="/" class="mobile-nav-link">HOME</a>
+    <a href="/pages/about.html" class="mobile-nav-link">ABOUT</a>
+    <a href="/pages/projects.html" class="mobile-nav-link">PROJECTS</a>
+    <a href="/pages/courseworks.html" class="mobile-nav-link">COURSEWORKS</a>
+    <a href="https://drive.google.com/file/d/13wM4XPXzgTPqEsJSqjg9p_nK3XLDD1TZ/view?usp=drive_link" target="_blank" class="mobile-nav-link">PORTFOLIO</a>
+</nav>

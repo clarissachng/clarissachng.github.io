@@ -3,6 +3,11 @@
     PROJECT PAGE
 =================== */
 
+body {
+    overflow-x: hidden;
+    width: 80%;
+}
+
 .project-header.clarissa {
     background: linear-gradient(0deg, var(--bg) 3%, rgba(208,187,238,0.5) 25%, rgba(208,187,238,0.8) 50%, rgba(208,187,238,0.5) 75%, var(--bg) 100%);
     position: relative;
@@ -346,7 +351,7 @@ button.project-cta.dw:hover {
 }
 
 .scenario-card {
-  background: #fff;
+  background: var(--dark-btn-bg);
   border-radius: 12px;
   padding: 2rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -392,4 +397,10 @@ button.project-cta.dw:hover {
 .final-bottom {
     display: flex;
     margin-top: 5em;
+    flex-direction: column;
+}
+
+.final-txt.dw {
+    width: 100%;
+    margin-bottom: 2vw;
 }
