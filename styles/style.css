@@ -242,8 +242,8 @@ button:hover .button-text a {
   border-right: 2px solid #e8e9eb;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 2vw 1vw;
+  align-items: flex-start;
+  padding: 2.5vw 1vw 2vw;
   z-index: 999;
   justify-content: space-between;
 }
@@ -256,17 +256,17 @@ button:hover .button-text a {
 }
 
 .sidebar-logo img {
-  width: 4vw;
+  width: 3.5vw;
   height: auto;
   mix-blend-mode: multiply;
 }
 
 .sidebar-text {
-  text-align: center;
+  text-align: left;
 }
 
 .sidebar-text h5 {
-  font-size: 1.75em;
+  font-size: 2em;
   font-weight: 500;
   text-transform: none;
   letter-spacing: normal;
@@ -288,7 +288,7 @@ button:hover .button-text a {
 .nav-pill-bg {
   position: absolute;
   background: rgb(229, 229, 226);
-  border-radius: 20px;
+  border-radius: 10px;
   height: 2.2vw;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 0;
@@ -910,7 +910,7 @@ h2.breif-txt {
   gap: 2vw;
 }
 .small.project-container {
-  background-color: #e8e9eb;
+  background-color: var(--dark-btn-bg);
   width: 100%;
   height: auto;
   padding: 1.5vw;
@@ -932,7 +932,7 @@ img.short-proj {
 }
 
 .small.project-container:hover {
-  background-color: #f0f1f3;
+  background-color: var(--bg);
   transition: 0.3s ease-in-out;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   text-decoration: none !important;
